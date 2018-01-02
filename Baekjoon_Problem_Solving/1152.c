@@ -1,4 +1,6 @@
 /*
+https://www.acmicpc.net/problem/1152
+
 &Question
 영어 대소문자와 띄어쓰기만으로 이루어진 문장이 주어진다. 이 문장에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오.
 
@@ -8,7 +10,7 @@
 &Output
 첫째 줄에 단어의 개수를 출력한다.
 
-&Example)
+&Example
 -input
 The Curious Case of Benjamin Button
 -output
