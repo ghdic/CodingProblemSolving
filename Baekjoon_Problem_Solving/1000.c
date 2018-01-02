@@ -1,6 +1,9 @@
 /*
 https://www.acmicpc.net/problem/1000
 
+&Title
+A+B
+
 &Question
 두 수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
 
@@ -18,6 +21,8 @@ https://www.acmicpc.net/problem/1000
 
 */
 
+/*
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main() {
@@ -27,3 +32,4 @@ int main() {
 
 	printf("%d", a + b);
 }
+*/
