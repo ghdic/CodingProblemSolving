@@ -157,6 +157,7 @@
       </ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2742.c" />
+    <ClCompile Include="8393.c" />
     <ClCompile Include="9498.c" />
   </ItemGroup>
   <ItemGroup>
