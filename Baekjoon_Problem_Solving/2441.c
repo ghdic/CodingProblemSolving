@@ -26,7 +26,7 @@ https://www.acmicpc.net/problem/2441
 
 */
 
-
+/*
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -45,3 +45,4 @@ int main() {
 	}
 	return 0;
 }
+*/
