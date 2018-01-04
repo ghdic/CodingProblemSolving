@@ -42,5 +42,11 @@
     <ClCompile Include="2439.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2440.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Form.txt" />
   </ItemGroup>
 </Project>

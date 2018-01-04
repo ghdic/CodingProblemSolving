@@ -150,6 +150,7 @@
     </ClCompile>
     <ClCompile Include="2438.c" />
     <ClCompile Include="2439.c" />
+    <ClCompile Include="2440.c" />
     <ClCompile Include="2739.c" />
     <ClCompile Include="2741.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -157,6 +158,9 @@
     </ClCompile>
     <ClCompile Include="2742.c" />
     <ClCompile Include="9498.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Form.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
