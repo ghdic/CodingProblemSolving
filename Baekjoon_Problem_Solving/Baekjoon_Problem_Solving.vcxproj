@@ -167,6 +167,7 @@
     </ClCompile>
     <ClCompile Include="2742.c" />
     <ClCompile Include="2839.c" />
+    <ClCompile Include="4673.c" />
     <ClCompile Include="8393.c" />
     <ClCompile Include="9498.c" />
   </ItemGroup>
