@@ -152,6 +152,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11654.c" />
     <ClCompile Include="1924.c" />
     <ClCompile Include="2438.c" />
     <ClCompile Include="2439.c" />
