@@ -145,6 +145,7 @@
     </ClCompile>
     <ClCompile Include="1002.c" />
     <ClCompile Include="1003.c" />
+    <ClCompile Include="10039.c" />
     <ClCompile Include="1004.c" />
     <ClCompile Include="1005.c" />
     <ClCompile Include="10817.c" />
