@@ -146,6 +146,7 @@
     <ClCompile Include="1002.c" />
     <ClCompile Include="1003.c" />
     <ClCompile Include="1004.c" />
+    <ClCompile Include="1005.c" />
     <ClCompile Include="10817.c" />
     <ClCompile Include="10828.c" />
     <ClCompile Include="10871.c" />
@@ -163,6 +164,7 @@
     <ClCompile Include="2439.c" />
     <ClCompile Include="2440.c" />
     <ClCompile Include="2441.c" />
+    <ClCompile Include="2577.c" />
     <ClCompile Include="2739.c" />
     <ClCompile Include="2741.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
