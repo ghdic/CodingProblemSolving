@@ -99,6 +99,9 @@
     <ClCompile Include="10039.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2747.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Form.txt" />
