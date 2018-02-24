@@ -90,9 +90,6 @@
     <ClCompile Include="1237.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1005.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="2577.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -103,6 +100,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1546.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1005.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1463.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -55,33 +55,49 @@ ACM Craft
 
 /*
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct Node {
-	struct No	de *link;
-	int item;
-}node;
-
+#include <cstdio>
+#include <vector>
+#include <queue>
+#include <algorithm>
+using namespace std;
 
 int main() {
-	int T,N,K, Target;
-	int *building, *rule1, *rule2;
-	scanf("%d", &T);
+	int T, N, K, W, X, Y;
+	int time[1000], pre[1000] = { 0 }, result[1000] = { 0 };
+	vector<int> suc[1000];
+	queue<int> Q;
+	scanf("%d", &T); //case
 
 	for (int i = 0; i < T; i++) {
-		scanf("%d %d", &N, &K); //건물개수, 규칙개수
-		building = (int *)malloc(sizeof(int)*N);
-		rule1 = (int*)malloc(sizeof(int)*K);
-		rule2 = (int*)malloc(sizeof(int)*K);
+		scanf("%d %d", &N, &K); //cnt, rule
 
-		for (int i = 0; i < N; i++)
-			scanf("%d", building[i]);
-		for (int i = 0; i < K; i++)
-			scanf("%d %d", &rule1[i], &rule2[i]);
-		scanf("%d", &Target);
+		for (int j = 0; j < N; j++)
+			scanf("%d", &time[j]);
+		for (int j = 0; j < K; j++) {
+			scanf("%d %d", &X, &Y);
+			suc[X - 1].push_back(Y - 1);
+			pre[Y - 1]++;
+		}
+		scanf("%d", &W);
+		W--;
+
+		for (int j = 0; j < N; j++)
+			if (!pre[j])Q.push(j);
+
+		while (pre[W] > 0) {
+			int u = Q.front();
+			Q.pop();
+
+			for (int next : suc[u]) {
+				result[next] = max(result[next], result[u] + time[u]);
+				if (--pre[next] == 0)Q.push(next);
+			}
+		}
+
+		printf("%d\n", result[W] + time[W]);
 	}
 
 	return 0;
 }
+
 */
