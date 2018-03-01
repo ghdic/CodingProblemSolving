@@ -120,6 +120,9 @@
     <ClCompile Include="1937.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2302.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Form.txt" />
