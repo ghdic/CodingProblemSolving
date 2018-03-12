@@ -27,7 +27,7 @@ https://www.acmicpc.net/problem/2588
 */
 
 
-#define _CRT_SECURE_NO_WARNINGS
+/*
 #include <iostream>
 using namespace std;
 
@@ -42,3 +42,4 @@ int main() {
 	cout << n1 * n2 << endl;
 	return 0;
 }
+*/

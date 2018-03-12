@@ -55,34 +55,38 @@ fibonacci(3)은 fibonacci(2)와 fibonacci(1)의 결과를 얻고, 2를 리턴한
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int fibonacci(int n);
-int zero, one;
+int fibo(int n);
 
 int main() {
-	int tmp, num;
+	int tmp, num, zero, one;
 	scanf("%d", &tmp);
 
 	for (int i = 0; i < tmp; i++) {
-		zero = 0, one = 0;
 		scanf("%d", &num);
-		fibonacci(num);
+		if (num == 0)zero = 1;
+		else if (num == 1)zero = 0;
+		else zero = fibo(num-1);
+
+		one=fibo(num);
 		printf("%d %d\n", zero, one);
 	}
 
 	return 0;
 }
 
-int fibonacci(int n) {
-	if (n == 0) {
-		zero++;
+int fibo(int n) {
+	if (n == 0)
 		return 0;
-	}
-	else if (n == 1) {
-		one++;
+	else if (n == 1)
 		return 1;
-	}
 	else {
-		return fibonacci(n - 1) + fibonacci(n - 2);
+		int n1=0, n2=1, tmp;
+		for (int i = 1; i < n; ++i) {
+			tmp = n1 + n2;
+			n1 = n2;
+			n2 = tmp;
+		}
+		return tmp;
 	}
 }
 */
