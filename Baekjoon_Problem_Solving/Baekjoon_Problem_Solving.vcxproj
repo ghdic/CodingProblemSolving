@@ -175,6 +175,7 @@
     <ClCompile Include="2440.c" />
     <ClCompile Include="2441.c" />
     <ClCompile Include="2577.c" />
+    <ClCompile Include="2588.cpp" />
     <ClCompile Include="2739.c" />
     <ClCompile Include="2741.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

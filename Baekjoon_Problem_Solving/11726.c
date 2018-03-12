@@ -23,7 +23,7 @@ https://www.acmicpc.net/problem/11726
 
 */
 
-
+/*
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
@@ -48,3 +48,4 @@ int main() {
 	printf("%d\n", fibo(N));
 	return 0;
 }
+*/
