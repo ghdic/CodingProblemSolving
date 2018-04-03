@@ -198,6 +198,12 @@
     <ClCompile Include="5355.cpp">
       <Filter>소스 파일\5000~5999</Filter>
     </ClCompile>
+    <ClCompile Include="1789.cpp">
+      <Filter>소스 파일\1000~1999</Filter>
+    </ClCompile>
+    <ClCompile Include="2675.cpp">
+      <Filter>소스 파일\2000~2999</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Form.txt" />
