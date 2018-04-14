@@ -204,17 +204,26 @@
     <ClCompile Include="2675.cpp">
       <Filter>소스 파일\2000~2999</Filter>
     </ClCompile>
-    <ClCompile Include="2753.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2935.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1934.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\1000~1999</Filter>
     </ClCompile>
     <ClCompile Include="2480.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\2000~2999</Filter>
+    </ClCompile>
+    <ClCompile Include="2753.cpp">
+      <Filter>소스 파일\2000~2999</Filter>
+    </ClCompile>
+    <ClCompile Include="2935.cpp">
+      <Filter>소스 파일\2000~2999</Filter>
+    </ClCompile>
+    <ClCompile Include="3009.cpp">
+      <Filter>소스 파일\3000~3999</Filter>
+    </ClCompile>
+    <ClCompile Include="4101.cpp">
+      <Filter>소스 파일\4000~4999</Filter>
+    </ClCompile>
+    <ClCompile Include="10156cpp.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
