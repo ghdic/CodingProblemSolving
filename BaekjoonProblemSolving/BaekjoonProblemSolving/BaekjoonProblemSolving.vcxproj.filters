@@ -483,14 +483,14 @@
     <ClCompile Include="10809.cpp">
       <Filter>소스 파일\10000~10999</Filter>
     </ClCompile>
-    <ClCompile Include="10826.cpp">
-      <Filter>소스 파일\10000~10999</Filter>
-    </ClCompile>
     <ClCompile Include="10870.cpp">
       <Filter>소스 파일\10000~10999</Filter>
     </ClCompile>
     <ClCompile Include="11444.cpp">
       <Filter>소스 파일\11000~11999</Filter>
+    </ClCompile>
+    <ClCompile Include="10826.py">
+      <Filter>소스 파일\10000~10999</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

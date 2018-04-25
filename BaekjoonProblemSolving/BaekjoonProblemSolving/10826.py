@@ -31,6 +31,16 @@ Fn = Fn-1 + Fn-2 (n>=2)가 된다.n=17일때 까지 피보나치
 
 */
 
+N = int(input())
+dp = [0 for i in range(max(N + 1, 3))];
+dp[0] = 0
+dp[1] = 1
+for i in range(2, N + 1) :
+	dp[i] = dp[i - 1] + dp[i - 2]
+	print(dp[N])
+#파이선 자료형 십사기요...
+
+//c++ code
 /*
 //답은 맞으나
 //시간 초과.. ㅠㅠ
