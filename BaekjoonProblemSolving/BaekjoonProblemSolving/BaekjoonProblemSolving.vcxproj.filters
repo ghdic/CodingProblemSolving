@@ -507,6 +507,42 @@
     <ClCompile Include="11047.cpp">
       <Filter>소스 파일\11000~11999</Filter>
     </ClCompile>
+    <ClCompile Include="1157.cpp">
+      <Filter>소스 파일\1000~1999</Filter>
+    </ClCompile>
+    <ClCompile Include="1357.cpp">
+      <Filter>소스 파일\1000~1999</Filter>
+    </ClCompile>
+    <ClCompile Include="4458.cpp">
+      <Filter>소스 파일\4000~4999</Filter>
+    </ClCompile>
+    <ClCompile Include="5218.cpp">
+      <Filter>소스 파일\5000~5999</Filter>
+    </ClCompile>
+    <ClCompile Include="9086.cpp">
+      <Filter>소스 파일\9000~9999</Filter>
+    </ClCompile>
+    <ClCompile Include="10808.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
+    </ClCompile>
+    <ClCompile Include="10821.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
+    </ClCompile>
+    <ClCompile Include="10987.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
+    </ClCompile>
+    <ClCompile Include="11170.cpp">
+      <Filter>소스 파일\11000~11999</Filter>
+    </ClCompile>
+    <ClCompile Include="11365.cpp">
+      <Filter>소스 파일\11000~11999</Filter>
+    </ClCompile>
+    <ClCompile Include="11655.cpp">
+      <Filter>소스 파일\11000~11999</Filter>
+    </ClCompile>
+    <ClCompile Include="11944.cpp">
+      <Filter>소스 파일\11000~11999</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Form.txt">
