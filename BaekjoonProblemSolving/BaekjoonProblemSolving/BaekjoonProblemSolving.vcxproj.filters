@@ -543,6 +543,15 @@
     <ClCompile Include="11944.cpp">
       <Filter>소스 파일\11000~11999</Filter>
     </ClCompile>
+    <ClCompile Include="10474.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
+    </ClCompile>
+    <ClCompile Include="10822.cpp">
+      <Filter>소스 파일\10000~10999</Filter>
+    </ClCompile>
+    <ClCompile Include="1912.cpp">
+      <Filter>소스 파일\1000~1999</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Form.txt">
