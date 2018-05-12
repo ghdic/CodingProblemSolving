@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['baekjoonformcreate.py'],
-             pathex=['C:\\Users\\User\\PycharmProjects\\Project'],
+             pathex=['C:\\Users\\User\\source\\repos\\CodingProblemSolving\\BaekjoonProblemSolving\\baekjoonformcreateor'],
              binaries=[],
              datas=[],
              hiddenimports=[],

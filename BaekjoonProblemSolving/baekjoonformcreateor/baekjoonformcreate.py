@@ -80,6 +80,6 @@ for kk in sampledata:
 
 f.write("\n*/"+"\n\n\n")
 
-f.write("#include <iostream>\nusing namespace std;\n\nint main() {\n	int N;\n\n	return 0;\n}\n")
+f.write("#define _CRT_SECURE_NO_WARNINGS\n#include <cstdio>\nusing namespace std;\n\nint main() {\n	int N;\n\n	return 0;\n}\n")
 f.close()
 time.sleep(1)
