@@ -1,6 +1,6 @@
 //https://algospot.com/judge/problem/read/BOGGLE
 
-
+/*
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
@@ -67,6 +67,8 @@ int main() {
 	}
 	return 0;
 }
+*/
+
 /*
 //답은 맞으나 시간 초과 ㅋㅋ.. 책 예제임
 #include <iostream>

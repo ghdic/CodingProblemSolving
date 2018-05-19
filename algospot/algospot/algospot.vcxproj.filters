@@ -13,10 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\CH.06">
+      <UniqueIdentifier>{f6002c2d-6e80-4db5-b43f-b405b8878f37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CH.06</Filter>
+    </ClCompile>
+    <ClCompile Include="6장 무식하게 풀기(brute force)\소풍.cpp">
+      <Filter>Source Files\CH.06</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
