@@ -1,6 +1,7 @@
 missing module named resource - imported by posix, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named posix - imported by os, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named _posixsubprocess - imported by subprocess, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
+missing module named org - imported by pickle, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named readline - imported by cmd, code, pdb, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 excluded module named _frozen_importlib - imported by importlib, importlib.abc, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
@@ -20,10 +21,9 @@ missing module named urllib.quote_plus - imported by urllib, requests.compat
 missing module named urllib.unquote - imported by urllib, asn1crypto._iri, requests.compat
 missing module named urllib.quote - imported by urllib, asn1crypto._iri, requests.compat
 missing module named grp - imported by shutil, tarfile, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
-missing module named _dummy_threading - imported by dummy_threading, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
-missing module named org - imported by copy, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, netrc, getpass, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
-missing module named 'org.python' - imported by pickle, xml.sax, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
+missing module named _dummy_threading - imported by dummy_threading, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
+missing module named 'org.python' - imported by copy, xml.sax, C:\Users\User\source\repos\CodingProblemSolving\BaekjoonProblemSolving\baekjoonformcreateor\baekjoonformcreate.py
 missing module named 'backports.ssl_match_hostname' - imported by urllib3.packages.ssl_match_hostname
 missing module named _abcoll - imported by urllib3.packages.ordered_dict
 missing module named dummy_thread - imported by urllib3.packages.ordered_dict

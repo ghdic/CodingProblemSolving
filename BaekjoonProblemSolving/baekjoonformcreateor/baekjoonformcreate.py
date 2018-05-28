@@ -14,7 +14,7 @@ if(os.path.exists(path+"\\"+problem+".cpp")):
     print("file exist!")
     time.sleep(1)
     exit(-1)
-f = open(path+"\\"+problem +".cpp", 'w')
+f = open(path+"\\"+problem +".cpp", 'w', encoding='UTF-8')
 # ============================================================
 f.write("/*\n")
 f.write(url + "\n\n")

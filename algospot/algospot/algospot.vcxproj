@@ -139,8 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\소풍.cpp" />
+    <ClCompile Include="6장 무식하게 풀기(brute force)\시계맞추기.cpp" />
+    <ClCompile Include="6장 무식하게 풀기(brute force)\여행하는 외판원 문제.cpp" />
+    <ClCompile Include="7장 분할 정복\예제.cpp" />
+    <ClCompile Include="7장 분할 정복\쿼드 트리 뒤집기.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
