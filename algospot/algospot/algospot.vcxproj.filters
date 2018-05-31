@@ -40,6 +40,12 @@
       <Filter>Source Files\CH.07 분할, 정복</Filter>
     </ClCompile>
     <ClCompile Include="7장 분할 정복\예제.cpp">
+      <Filter>Source Files\CH.07 분할, 정복</Filter>
+    </ClCompile>
+    <ClCompile Include="7장 분할 정복\울타리 잘라내기.cpp">
+      <Filter>Source Files\CH.07 분할, 정복</Filter>
+    </ClCompile>
+    <ClCompile Include="팬미팅.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
