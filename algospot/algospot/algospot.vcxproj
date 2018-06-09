@@ -147,6 +147,13 @@
     <ClCompile Include="7장 분할 정복\예제.cpp" />
     <ClCompile Include="7장 분할 정복\울타리 잘라내기.cpp" />
     <ClCompile Include="7장 분할 정복\쿼드 트리 뒤집기.cpp" />
+    <ClCompile Include="8장 동적 계획법\삼각형위의최대경로.cpp" />
+    <ClCompile Include="8장 동적 계획법\예제.cpp" />
+    <ClCompile Include="8장 동적 계획법\와일드카드.cpp" />
+    <ClCompile Include="8장 동적 계획법\외발뛰기.cpp" />
+    <ClCompile Include="8장 동적 계획법\원주율 외우기.cpp" />
+    <ClCompile Include="8장 동적 계획법\최대 증가 부분 수열.cpp" />
+    <ClCompile Include="8장 동적 계획법\합친LIS.cpp" />
     <ClCompile Include="팬미팅.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
