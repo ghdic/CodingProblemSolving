@@ -72,5 +72,8 @@
     <ClCompile Include="8장 동적 계획법\원주율 외우기.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Quantization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
