@@ -9,7 +9,7 @@ url = 'https://www.acmicpc.net/problem/' + problem
 req = requests.get(url)
 soup = BeautifulSoup(req.text, 'html.parser')
 # ============================================================
-path = "D:\github\CodingProblemSolving\BaekjoonProblemSolving\BaekjoonProblemSolving"
+path = "../../BaekjoonProblemSolving"
 if(os.path.exists(path+"\\"+problem+".cpp")):
     print("file exist!")
     time.sleep(1)

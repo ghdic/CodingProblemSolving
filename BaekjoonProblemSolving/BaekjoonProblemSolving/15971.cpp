@@ -75,41 +75,69 @@ N-1개가 발견되었는데, 각각 서로 다른 두 방 사이를 연결시�
 
 */
 
-
+/*
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
 #include <vector>
-#include <queue>
 #include <tuple>
+#include <stack>
 using namespace std;
 
-void bfs(int start, vector<int> graph[], bool check[]) {
-	queue<int> q;
+stack<int> value;
+vector<tuple<int, int>> graph[100001];
 
-	q.push(start);
+void dfs(int start, int end, vector<tuple<int, int>> graph[], bool check[]) {
+	stack<int> s;
+	s.push(start);
 	check[start] = true;
+	
+	while (!s.empty()) {
+		int current_node = s.top();
+		s.pop();
+		
+		//B로봇이 있는곳까지 도착하면 함수 종료
+		if (current_node == end) {
+			return;
+		}
+		
+		int cnt = 0;
+		for (int i = 0; i < graph[current_node].size(); i++) {
+			int next_node = get<0>(graph[current_node][i]);
 
-	while (!q.empty()) {
-		int tmp = q.front();
-		q.pop();
-		for (int i = 0; i < graph[tmp].size(); i++) {
-			if (check[graph[tmp][i] == false]) {
-				q.push(graph[tmp][i]);
-				check[graph[tmp][i]] = true;
+			if (check[next_node] == false) {
+				check[next_node] = true;
+				s.push(current_node);
+				s.push(next_node);
+				value.push(get<1>(graph[current_node][i]));
+				cnt++;
+				break;
 			}
+		}
+		//더 이상 갈곳이 없다면 뒤로 돌아가기 때문에 push한 값을 반납함.
+		if (cnt == 0) {
+			value.pop();
 		}
 	}
 }
 
 int main() {
 	int N, start, end, a, b, c;
-	vector<tuple<int, int>> graph[100001];
+	bool check[100001] = {};
 	scanf("%d %d %d", &N, &start, &end);
 	for (int i = 0; i < N - 1; i++) {
 		scanf("%d %d %d", &a, &b, &c);
 		graph[a].push_back(make_tuple(b, c));
 		graph[b].push_back(make_tuple(a, c));
 	}
-
+	dfs(start, end, graph, check);
+	int total = 0, best = 0;
+	while (!value.empty()) {
+		int val = value.top();
+		value.pop();
+		total += val;
+		if (best < val)best = val;
+	}
+	printf("%d\n", total - best);
 	return 0;
 }
+*/

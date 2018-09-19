@@ -142,12 +142,9 @@
     <Text Include="Form.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1431.cpp" />
-    <ClCompile Include="15969.cpp" />
-    <ClCompile Include="15970.cpp" />
-    <ClCompile Include="15971.cpp" />
-    <ClCompile Include="1748.cpp" />
-    <ClCompile Include="2668.cpp" />
+    <ClCompile Include="2798.cpp" />
+    <ClCompile Include="2997.cpp" />
+    <ClCompile Include="9366.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
