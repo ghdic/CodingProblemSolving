@@ -29,7 +29,7 @@ except TimeoutException:
     exit(-1)
 
 # ============================================================
-path = ""
+path = "../LeetCodeSolvingProblem"
 title = driver.find_element_by_css_selector("div.css-1ponsav").text
 if(os.path.exists(path+"\\"+title+".cpp")):
     print("file exist!")

@@ -10,7 +10,7 @@ options = webdriver.ChromeOptions()
 options.add_argument('headless')
 options.add_argument('window-size=1920x1080')
 options.add_argument('disable-gpu')
-driver = webdriver.Chrome('chromedriver')
+driver = webdriver.Chrome('chromedriver', options=options)
 
 driver.get(url)
 
@@ -50,7 +50,7 @@ def crawl_problem(url):
 
     # 제목
     f.write("# " + title+"\n")
-
+    f.write(url+"\n\n")
     # 내용
     story = driver.find_elements_by_css_selector("#cmp_daily_problems_main_body_id > div > div > div > div > div.head.b-vspace-m")
     btn = driver.find_element_by_css_selector("#dp-expand")
@@ -73,7 +73,7 @@ def crawl_problem(url):
 
     f.write("\n===============================================\n")
     # 한국 번역 부분
-    f.write("\n\n\n # 내 멋대로 발직역\n")
+    f.write("\n\n\n# 내 멋대로 발직역\n")
     f.write("# 제목\n")
 
     for i in today_problem:
