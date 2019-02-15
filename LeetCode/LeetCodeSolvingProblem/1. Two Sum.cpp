@@ -19,6 +19,8 @@ return [0, 1].
  
 
 */
+
+/*
 #include "header.h"
 
 
@@ -39,7 +41,7 @@ public:
     }
 };
 
-/*
+
 int main() {
 	vector<int> nums = { 2, 7, 11, 15 };
 	int target = 26;
@@ -119,3 +121,5 @@ public int[] twoSum(int[] nums, int target){
 ```
 
 시간복잡도 : O(n)
+
+*/

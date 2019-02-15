@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1. Two Sum.cpp" />
+    <ClCompile Include="2. Add Two Numbers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
