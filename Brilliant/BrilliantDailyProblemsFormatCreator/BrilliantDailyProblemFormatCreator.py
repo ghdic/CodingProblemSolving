@@ -1,5 +1,6 @@
 import datetime
 import re
+import time
 from selenium import webdriver
 import os
 print("오늘의 문제를 가져옵니다...")
@@ -21,7 +22,6 @@ get_url = driver.find_elements_by_css_selector("div.nf-feed-item > div > a")
 
 # 앞에 두개 링크가 오늘의 문제다.
 problem_url = [get_url[0].get_attribute("href"), get_url[1].get_attribute("href")]
-
 print(problem_url)
 # 문제를 크롤링 하는 함수 작성
 
@@ -45,7 +45,11 @@ def crawl_problem(url):
     # 폴더 있는지 확인하고 생성
     if not os.path.exists(path):
         os.makedirs(path)
-    # 파일 있는지 확인 (to do)
+    # 파일이 이미 존재하면 종료
+    if os.path.exists(path + "\\" + cleanText(title) + ".md"):
+        print("이미 생성된 파일이 존재합니다.\n%s\n프로그램을 종료합니다." % (path + "\\" + cleanText(title) + ".md"))
+        time.sleep(1)
+        exit(-1)
     f = open(path + "\\" + cleanText(title) + ".md", 'w', encoding='UTF-8')
 
     # 제목
