@@ -24,7 +24,6 @@ get_url = driver.find_elements_by_css_selector("div.nf-feed-item > div > a")
 problem_url = [get_url[0].get_attribute("href"), get_url[1].get_attribute("href")]
 print(problem_url)
 # 문제를 크롤링 하는 함수 작성
-
 def cleanText(readData):
     #텍스트에 포함되어 있는 특수 문자 제거
     text = re.sub('[-=+,#/\?:^$.@*\"※~&%ㆍ!』\\‘|\(\)\[\]\<\>`\'…》]', '', readData)

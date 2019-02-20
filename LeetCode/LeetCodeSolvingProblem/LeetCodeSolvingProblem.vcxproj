@@ -23,6 +23,8 @@
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
+    <ClCompile Include="5. Longest Palindromic Substring.cpp" />
+    <ClCompile Include="6. ZigZag Conversion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

@@ -27,6 +27,12 @@
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5. Longest Palindromic Substring.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6. ZigZag Conversion.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
