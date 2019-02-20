@@ -30,7 +30,7 @@
     <ClCompile Include="5. Longest Palindromic Substring.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="6. ZigZag Conversion.cpp">
+    <ClCompile Include="7. Reverse Integer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
