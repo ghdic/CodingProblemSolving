@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="!6. ZigZag Conversion.cpp" />
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
-    <ClCompile Include="8. String to Integer (atoi).cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />
