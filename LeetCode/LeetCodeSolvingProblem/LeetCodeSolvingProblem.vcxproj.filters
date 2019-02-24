@@ -36,6 +36,15 @@
     <ClCompile Include="8. String to Integer (atoi).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9. Palindrome Number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6. ZigZag Conversion.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10. Regular Expression Matching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
