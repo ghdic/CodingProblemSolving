@@ -21,8 +21,6 @@
   <ItemGroup>
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="10. Regular Expression Matching.cpp" />
-    <ClCompile Include="11. Container With Most Water.cpp" />
-    <ClCompile Include="13. Roman to Integer.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
