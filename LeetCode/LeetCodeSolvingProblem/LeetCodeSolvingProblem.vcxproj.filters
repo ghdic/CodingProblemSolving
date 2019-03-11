@@ -42,7 +42,22 @@
     <ClCompile Include="6. ZigZag Conversion.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11. Container With Most Water.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="10. Regular Expression Matching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13. Roman to Integer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="12. Integer to Roman.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14. Longest Common Prefix.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15. 3Sum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
