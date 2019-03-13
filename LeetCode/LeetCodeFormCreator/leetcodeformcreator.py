@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+﻿from bs4 import BeautifulSoup
 import requests
 import os
 import time
@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 print("문제 url을 입력해주세요")
 url = input()
 options = webdriver.ChromeOptions()
-#options.add_argument('headless')
+options.add_argument('headless')
 options.add_argument('window-size=1920x1080')
 options.add_argument('disable-gpu')
 driver = webdriver.Chrome('chromedriver', options=options)

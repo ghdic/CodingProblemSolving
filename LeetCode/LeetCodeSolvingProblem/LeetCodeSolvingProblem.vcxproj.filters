@@ -60,6 +60,12 @@
     <ClCompile Include="15. 3Sum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="16. 3Sum Closest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="17. Letter Combinations of a Phone Number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

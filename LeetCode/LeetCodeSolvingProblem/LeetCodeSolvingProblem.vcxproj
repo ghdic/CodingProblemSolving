@@ -26,6 +26,8 @@
     <ClCompile Include="13. Roman to Integer.cpp" />
     <ClCompile Include="14. Longest Common Prefix.cpp" />
     <ClCompile Include="15. 3Sum.cpp" />
+    <ClCompile Include="16. 3Sum Closest.cpp" />
+    <ClCompile Include="17. Letter Combinations of a Phone Number.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
