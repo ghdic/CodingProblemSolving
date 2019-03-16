@@ -28,6 +28,8 @@
     <ClCompile Include="15. 3Sum.cpp" />
     <ClCompile Include="16. 3Sum Closest.cpp" />
     <ClCompile Include="17. Letter Combinations of a Phone Number.cpp" />
+    <ClCompile Include="18. 4Sum.cpp" />
+    <ClCompile Include="19. Remove Nth Node From End of List.cpp" />
     <ClCompile Include="2. Add Two Numbers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
