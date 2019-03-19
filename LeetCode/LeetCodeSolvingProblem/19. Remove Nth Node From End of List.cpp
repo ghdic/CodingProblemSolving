@@ -29,7 +29,7 @@ Could you do this in one pass?
  * };
  */
 
-
+/*
 #include "header.h"
 
 struct ListNode {
@@ -94,7 +94,7 @@ int main() {
 	}
 	return 0;
 }
-
+*/
 /*
 Solution
 Approach 1: Two pass algorithm

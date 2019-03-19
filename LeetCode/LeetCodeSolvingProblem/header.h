@@ -9,4 +9,5 @@
 #include <algorithm>
 #include <limits.h>
 #include <map>
+#include <stack>
 using namespace std;
