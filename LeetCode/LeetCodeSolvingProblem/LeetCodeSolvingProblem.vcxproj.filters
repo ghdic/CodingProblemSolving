@@ -78,6 +78,9 @@
     <ClCompile Include="21. Merge Two Sorted Lists.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22. Generate Parentheses.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

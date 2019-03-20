@@ -14,6 +14,7 @@ Output: 1->1->2->3->4->4
 
 */
 
+/*
 #include "header.h"
 
 struct ListNode {
@@ -93,6 +94,7 @@ int main() {
 
 	return 0;
 }
+*/
 
 /*
 Solution
