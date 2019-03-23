@@ -19,6 +19,7 @@ For example, given n = 3, a solution set is:
 
 */
 
+/*
 #include "header.h"
 
 class Solution {
@@ -63,6 +64,7 @@ int main() {
 		cout << v[i] << "\n";
 	return 0;
 }
+*/
 
 /*
 &Solution
