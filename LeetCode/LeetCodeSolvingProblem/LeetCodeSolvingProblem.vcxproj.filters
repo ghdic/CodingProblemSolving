@@ -99,6 +99,12 @@
     <ClCompile Include="28. Implement strStr().cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="29. Divide Two Integers.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="30. Substring with Concatenation of All Words.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

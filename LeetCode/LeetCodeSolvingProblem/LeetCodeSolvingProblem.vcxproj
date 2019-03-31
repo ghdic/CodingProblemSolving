@@ -40,7 +40,9 @@
     <ClCompile Include="26. Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="27. Remove Element.cpp" />
     <ClCompile Include="28. Implement strStr().cpp" />
+    <ClCompile Include="29. Divide Two Integers.cpp" />
     <ClCompile Include="3. Longest Substring Without Repeating Characters.cpp" />
+    <ClCompile Include="30. Substring with Concatenation of All Words.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
