@@ -27,6 +27,7 @@ Output: []
 
 */
 
+/*
 #include "header.h"
 
 class Solution {
@@ -87,6 +88,7 @@ public:
     }
 };
 
+
 int main() {
 	string s = "barfoothefoobarman";
 	vector<string> words = { "foo", "bar" };
@@ -96,6 +98,7 @@ int main() {
 		cout << result[i] << " ";
 	return 0;
 }
+*/
 
 /*
 &Solution
