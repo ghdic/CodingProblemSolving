@@ -108,6 +108,9 @@
     <ClCompile Include="31. Next Permutation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="32. Longest Valid Parentheses.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
