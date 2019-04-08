@@ -23,8 +23,9 @@ Output: -1
 
 */
 
-#include "header.h"
 /*
+#include "header.h"
+
 class Solution {
 public:
     int search(vector<int>& nums, int target) {

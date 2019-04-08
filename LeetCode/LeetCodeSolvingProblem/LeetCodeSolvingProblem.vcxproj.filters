@@ -114,6 +114,12 @@
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="35. Search Insert Position.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
