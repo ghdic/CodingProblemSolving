@@ -48,6 +48,7 @@
     <ClCompile Include="33. Search in Rotated Sorted Array.cpp" />
     <ClCompile Include="34. Find First and Last Position of Element in Sorted Array.cpp" />
     <ClCompile Include="35. Search Insert Position.cpp" />
+    <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
