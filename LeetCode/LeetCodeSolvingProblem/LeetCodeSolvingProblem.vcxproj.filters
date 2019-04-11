@@ -123,6 +123,9 @@
     <ClCompile Include="36. Valid Sudoku.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="37. Sudoku Solver.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
