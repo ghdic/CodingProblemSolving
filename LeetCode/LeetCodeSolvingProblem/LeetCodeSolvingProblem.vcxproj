@@ -50,6 +50,7 @@
     <ClCompile Include="35. Search Insert Position.cpp" />
     <ClCompile Include="36. Valid Sudoku.cpp" />
     <ClCompile Include="37. Sudoku Solver.cpp" />
+    <ClCompile Include="38. Count and Say.cpp" />
     <ClCompile Include="4. Median of Two Sorted Arrays.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
