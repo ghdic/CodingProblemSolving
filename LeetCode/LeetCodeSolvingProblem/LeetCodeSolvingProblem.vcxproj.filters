@@ -129,6 +129,12 @@
     <ClCompile Include="38. Count and Say.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="39. Combination Sum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="40. Combination Sum II.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
