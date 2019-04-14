@@ -30,51 +30,62 @@ SK
 
 */
 
-
+/*
 #define _CRT_SECURE_NO_WARNINGS
-#include <cstdio>
-#include <vector>
-#include <algorithm>
-#include <list>
-using namespace std;
+#include <stdio.h>
+#include <string.h>
 
-//재귀로 결과 구하는 함수
-bool recursive_result(vector<int> v, bool result, int count) {
+#define ME 1
+#define YOU 0
+#define WIN true
+#define LOSE false
 
-}
+int n;
+int dp[2][1001];
 
-// 이전 결과 활용하는 함수
-bool use_prev_result(vector<int> v, bool result, list<int> values) {
-
-}
-
-// 벡터, 마지막돌을 잡은사람이 이기는가 지는가
-void rockGame(vector<int> v, bool result) {
-	int count;
-	list<int> values;
-	sort(v.begin, v.end);
-	vector<int>::iterator iter;
-	// 가장 큰 수까지 재귀&이전결과로 결과 구함
-	for (count = 1; count <= v[v.size];count++) {
-		for (iter = v.begin; iter != v.end; ++iter) {
-			// 이전 결과 활용
-			if (count > *iter) {
-				//리스트 pop push는 여기서 처리
-				use_prev_result(v, result, values);
-			}
-			// 재귀로 결과 구함
-			else {
-				recursive_result(v, result, count);
-			}
-		}
+int func(int turn, int remain) {
+	if (remain == 0) {
+		if (turn == ME)
+			return dp[turn][remain] = LOSE;
+		if (turn == YOU)
+			return dp[turn][remain] = WIN;
 	}
 
-	// 가장 큰 수까지 결과 구했으면 이전결과로 결과 구함
+	if (remain < 0) {
+		if (turn == ME)
+			return 1;
+		if (turn == YOU)
+			return 0;
+	}
 
+	if (dp[turn][remain] != -1)
+		return dp[turn][remain];
+
+	if (turn == ME)
+		dp[ME][remain] = func(turn ^ 1, remain - 1) | func(turn ^ 1, remain - 3) | func(turn ^ 1, remain - 4);
+
+	if(turn == YOU)
+		dp[YOU][remain] = func(turn ^ 1, remain - 1) & func(turn ^ 1, remain - 3) & func(turn ^ 1, remain - 4);
+
+	return dp[turn][remain];
 }
 
 int main() {
-	int kinds, tmp;
-	
+	scanf("%d", &n);
+	memset(dp, -1, sizeof(dp));
+
+	if (func(1, n) == WIN)
+		puts("SK");
+	else
+		puts("CY");
+
 	return 0;
 }
+*/
+/*
+&Solution
+백트랙킹을 이용해 풀 수 있다.
+위 풀이는 배열 이름이 dp인데 반해 dp사용은 전혀 안함..
+그냥 백트랙킹으로 풀고 있다.
+turn^1을 통해 0과 1을 반전하는건 좀 배워간다^^
+*/
