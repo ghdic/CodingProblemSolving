@@ -56,6 +56,7 @@
     <ClCompile Include="40. Combination Sum II.cpp" />
     <ClCompile Include="41. First Missing Positive.cpp" />
     <ClCompile Include="42. Trapping Rain Water.cpp" />
+    <ClCompile Include="43. Multiply Strings.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
