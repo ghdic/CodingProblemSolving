@@ -23,10 +23,10 @@ You must not use any built-in BigInteger library o
 r convert the inputs to integer directly.
 
 */
-
+/*
 #include "header.h"
 
-/*
+
 class Solution {
 public:
     string multiply(string num1, string num2) {
