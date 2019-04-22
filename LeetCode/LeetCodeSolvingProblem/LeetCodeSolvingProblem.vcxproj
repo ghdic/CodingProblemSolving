@@ -58,6 +58,7 @@
     <ClCompile Include="42. Trapping Rain Water.cpp" />
     <ClCompile Include="43. Multiply Strings.cpp" />
     <ClCompile Include="44. Wildcard Matching.cpp" />
+    <ClCompile Include="45. Jump Game II.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
