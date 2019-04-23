@@ -150,6 +150,9 @@
     <ClCompile Include="45. Jump Game II.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="46. Permutations.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
