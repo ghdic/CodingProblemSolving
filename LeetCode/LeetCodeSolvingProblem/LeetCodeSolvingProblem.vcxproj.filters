@@ -156,6 +156,9 @@
     <ClCompile Include="47. Permutations II.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="48. Rotate Image.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
