@@ -159,6 +159,9 @@
     <ClCompile Include="48. Rotate Image.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="49. Group Anagrams.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

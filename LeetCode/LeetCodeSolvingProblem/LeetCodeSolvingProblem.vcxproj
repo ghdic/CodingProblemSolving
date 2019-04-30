@@ -62,6 +62,7 @@
     <ClCompile Include="46. Permutations.cpp" />
     <ClCompile Include="47. Permutations II.cpp" />
     <ClCompile Include="48. Rotate Image.cpp" />
+    <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
