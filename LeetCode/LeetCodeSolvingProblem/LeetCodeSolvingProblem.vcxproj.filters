@@ -162,6 +162,12 @@
     <ClCompile Include="49. Group Anagrams.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="50. Pow(x, n).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="53. Maximum Subarray.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
