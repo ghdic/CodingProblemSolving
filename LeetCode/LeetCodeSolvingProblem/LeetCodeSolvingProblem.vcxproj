@@ -65,6 +65,7 @@
     <ClCompile Include="49. Group Anagrams.cpp" />
     <ClCompile Include="5. Longest Palindromic Substring.cpp" />
     <ClCompile Include="50. Pow(x, n).cpp" />
+    <ClCompile Include="51. N-Queens.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />

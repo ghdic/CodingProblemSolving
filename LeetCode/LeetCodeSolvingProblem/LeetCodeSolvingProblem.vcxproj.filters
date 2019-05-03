@@ -168,6 +168,9 @@
     <ClCompile Include="53. Maximum Subarray.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="51. N-Queens.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
