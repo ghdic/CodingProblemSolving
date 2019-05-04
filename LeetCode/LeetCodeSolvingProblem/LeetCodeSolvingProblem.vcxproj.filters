@@ -171,6 +171,12 @@
     <ClCompile Include="51. N-Queens.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="52. N-Queens II.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="54. Spiral Matrix.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
