@@ -69,6 +69,8 @@
     <ClCompile Include="52. N-Queens II.cpp" />
     <ClCompile Include="53. Maximum Subarray.cpp" />
     <ClCompile Include="54. Spiral Matrix.cpp" />
+    <ClCompile Include="55. Jump Game.cpp" />
+    <ClCompile Include="56. Merge Intervals.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
