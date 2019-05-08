@@ -183,6 +183,9 @@
     <ClCompile Include="56. Merge Intervals.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="57. Insert Interval.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
