@@ -192,6 +192,9 @@
     <ClCompile Include="59. Spiral Matrix II.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="60. Permutation Sequence.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
