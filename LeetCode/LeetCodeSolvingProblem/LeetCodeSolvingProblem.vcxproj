@@ -76,6 +76,11 @@
     <ClCompile Include="59. Spiral Matrix II.cpp" />
     <ClCompile Include="6. ZigZag Conversion.cpp" />
     <ClCompile Include="60. Permutation Sequence.cpp" />
+    <ClCompile Include="61. Rotate List.cpp" />
+    <ClCompile Include="62. Unique Paths.cpp" />
+    <ClCompile Include="63. Unique Paths II.cpp" />
+    <ClCompile Include="64. Minimum Path Sum.cpp" />
+    <ClCompile Include="65. Valid Number.cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="9. Palindrome Number.cpp" />
