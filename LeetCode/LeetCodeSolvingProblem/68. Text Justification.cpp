@@ -73,6 +73,7 @@ Output:
 
 */
 
+/*
 #include "header.h"
 
 class Solution {
@@ -80,11 +81,64 @@ public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
 		int n = words.size();
 		vector<string> result;
-		for (int i = 0; i < n; ++i) {
+		for (int i = 0; i < n;) {
 			string s = "";
-			while (i < n) {
-
+			vector<string> memo;
+			memo.push_back(words[i]);
+			int cnt = words[i++].length();
+			while (i < n && cnt <= maxWidth) {
+				int val = cnt + words[i].length() + 1;
+				if (val <= maxWidth) {
+					cnt = val;
+					memo.push_back(words[i]);
+				}
+				else
+					break;
+				i++;
 			}
+			int div = memo.size() - 1;
+			int rest = maxWidth - (cnt - div);
+			if (div == 0 || i == n) {
+				s = memo[0];
+				for (int j = 1; j < memo.size(); j++) {
+					s += ' ';
+					s += memo[j];
+					rest--;
+				}
+				while (rest--) {
+					s += ' ';
+				}
+			}
+			else {
+				int a = rest / div, b = rest % div;
+				string s1 = "", s2 = "";
+				while (a--)
+				{
+					s1 += ' ';
+				}
+				s2 = s1 + ' ';
+				s = memo[0];
+				for (int i = 1; i < memo.size(); i++) {
+					s += (i <= b ? s2 : s1) + memo[i];
+				}
+			}
+			result.push_back(s);
 		}
+		return result;
     }
 };
+
+int main() {
+	vector<string> words = { "Science", "is", "what", "we", "understand", "well", "enough", "to", "explain",
+		"to", "a", "computer.", "Art", "is", "everything", "else", "we", "do" };
+	int maxWidth = 20;
+	words = Solution().fullJustify(words, maxWidth);
+	for (int i = 0; i < words.size(); i++)
+		cout << words[i] << "\n";
+	return 0;
+}
+*/
+
+/*
+그냥 구현 문제다..
+*/
