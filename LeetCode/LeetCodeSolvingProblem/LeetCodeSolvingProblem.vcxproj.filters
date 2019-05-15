@@ -219,6 +219,12 @@
     <ClCompile Include="68. Text Justification.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="69. Sqrt(x).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="70. Climbing Stairs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

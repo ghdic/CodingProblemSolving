@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -84,7 +84,9 @@
     <ClCompile Include="66. Plus One.cpp" />
     <ClCompile Include="67. Add Binary.cpp" />
     <ClCompile Include="68. Text Justification.cpp" />
+    <ClCompile Include="69. Sqrt(x).cpp" />
     <ClCompile Include="7. Reverse Integer.cpp" />
+    <ClCompile Include="70. Climbing Stairs.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="9. Palindrome Number.cpp" />
   </ItemGroup>
