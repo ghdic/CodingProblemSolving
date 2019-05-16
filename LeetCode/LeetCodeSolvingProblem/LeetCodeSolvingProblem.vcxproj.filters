@@ -225,6 +225,9 @@
     <ClCompile Include="70. Climbing Stairs.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="71. Simplify Path.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
