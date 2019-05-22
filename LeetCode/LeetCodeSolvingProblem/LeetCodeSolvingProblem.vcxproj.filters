@@ -228,6 +228,12 @@
     <ClCompile Include="71. Simplify Path.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="72. Edit Distance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="73. Set Matrix Zeroes.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

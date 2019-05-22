@@ -41,7 +41,7 @@ f.write(url + "\n\n")
 f.write("&Title\n")
 f.write(title + "\n\n")
 
-problem = driver.find_element_by_css_selector("#question-detail-main-tabs > div.tab-pane__ncJk.css-182s6b1-TabContent.e5i1odf5 > div > div.content__u3I1.question-content__JfgR").text
+problem = driver.find_element_by_css_selector("#question-detail-main-tabs > div.tab-pane__ncJk.css-xailxq-TabContent.e5i1odf5 > div > div.content__u3I1.question-content__JfgR").text
 f.write("&Question\n")
 problem_description = problem.split('\n')
 cnt=0
