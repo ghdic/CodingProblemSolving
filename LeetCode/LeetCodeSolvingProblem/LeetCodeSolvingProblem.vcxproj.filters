@@ -234,6 +234,9 @@
     <ClCompile Include="73. Set Matrix Zeroes.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="74. Search a 2D Matrix.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
