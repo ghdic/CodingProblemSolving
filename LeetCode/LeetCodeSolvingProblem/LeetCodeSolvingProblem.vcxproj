@@ -93,6 +93,7 @@
     <ClCompile Include="74. Search a 2D Matrix.cpp" />
     <ClCompile Include="75. Sort Colors.cpp" />
     <ClCompile Include="76. Minimum Window Substring.cpp" />
+    <ClCompile Include="77. Combinations.cpp" />
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="9. Palindrome Number.cpp" />
   </ItemGroup>

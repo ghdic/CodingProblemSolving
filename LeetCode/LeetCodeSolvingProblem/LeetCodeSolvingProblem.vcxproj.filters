@@ -243,6 +243,9 @@
     <ClCompile Include="76. Minimum Window Substring.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="77. Combinations.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
