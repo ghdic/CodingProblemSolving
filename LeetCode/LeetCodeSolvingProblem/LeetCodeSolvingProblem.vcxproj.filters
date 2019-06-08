@@ -246,6 +246,18 @@
     <ClCompile Include="77. Combinations.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="78. Subsets.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="79. Word Search.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="81. Search in Rotated Sorted Array II.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
