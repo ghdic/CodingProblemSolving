@@ -99,6 +99,7 @@
     <ClCompile Include="8. String to Integer (atoi).cpp" />
     <ClCompile Include="80. Remove Duplicates from Sorted Array II.cpp" />
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp" />
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
     <ClCompile Include="9. Palindrome Number.cpp" />
   </ItemGroup>
   <ItemGroup>

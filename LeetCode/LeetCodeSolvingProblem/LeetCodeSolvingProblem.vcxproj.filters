@@ -258,6 +258,9 @@
     <ClCompile Include="81. Search in Rotated Sorted Array II.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">
