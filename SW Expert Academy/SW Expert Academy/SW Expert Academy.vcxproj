@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1824. 혁진이의 프로그램 검증 D4.cpp" />
     <ClCompile Include="7333. 한솔이의 택배 아르바이트 D4.cpp" />
     <ClCompile Include="7466. 팩토리얼과 최대공약수 D4.cpp" />
     <ClCompile Include="7699. 수지의 수지 맞는 여행 D4.cpp" />
