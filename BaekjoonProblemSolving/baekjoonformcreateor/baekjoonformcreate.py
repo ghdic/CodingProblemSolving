@@ -2,6 +2,13 @@ from bs4 import BeautifulSoup
 import requests
 import os
 import time
+import re
+
+
+def cleanText(readData):
+    #텍스트에 포함되어 있는 특수 문자 제거
+    text = re.sub('[\/:*\?\"\\‘|\<\>`\']', ' ', readData)
+    return text
 
 print("문제 번호를 입력해주세요")
 problem = input()
@@ -20,7 +27,7 @@ f.write("/*\n")
 f.write(url + "\n\n")
 
 f.write("&Title\n")
-title = soup.find("div", {"class": "page-header"})
+title = cleanText(soup.find("div", {"class": "page-header"}))
 title = title.get_text().replace("\n","")
 f.write(title + "\n\n")
 
@@ -80,6 +87,6 @@ for kk in sampledata:
 
 f.write("\n*/"+"\n\n\n")
 
-f.write("#define _CRT_SECURE_NO_WARNINGS\n#include <cstdio>\nusing namespace std;\n\nint main() {\n	int N;\n\n	return 0;\n}\n")
+f.write("#include <iostream>\nusing namespace std;\n\nint main() {\n	int N;\n	setbuf(stdout, NULL);\n	ios::sync_with_stdio(false);\n	return 0;\n}\n")
 f.close()
 time.sleep(1)

@@ -83,129 +83,71 @@ _ 메모리에 0이 저장되어 있으면 이동 방향을 오른쪽으로 바�
 output.txt
 */
 
+/*
 #include <iostream>
 #include <string>
+#include <cstring>
+#include <queue>
+#include <tuple>
 using namespace std;
 
 string mp[20];
-int X[4] = { -1, 0, 0, 1 }, Y[4] = { 0, -1, 1, 0 };
-int R, C;
+const int Y[4] = { 0, 1, 0, -1 };
+const int X[4] = { 1, 0, -1, 0 }; // 0:오른쪽 1:아래 2:왼쪽 3:위쪽
+int R = 0, C = 0;
+bool path[20][20][16][4]; //row, col, val, dir 반복 되는 사이클 체크
 
-bool explore(int &row, int &col, int &memory, int &dir, bool path[20][20][16][4]) {
+bool explore(int& row, int& col, int& memory, int& dir) {
+	queue<tuple<int, int, int, int>> que;
+	que.push(make_tuple(row, col, memory, dir));
+	while (!que.empty()) {
+		tie(row, col, memory, dir) = que.front();
+		que.pop();
+		while (true) {
+			switch (mp[row][col]) {
+			case '>': dir = 0; break;
+			case '<': dir = 2; break;
+			case '^': dir = 3; break;
+			case 'v': dir = 1; break;
+			case '_': dir = memory ? 2 : 0; break;
+			case '|': dir = memory ? 3 : 1; break;
+			case '?': break;
+			case '.': break;
+			case '+': memory = memory == 15 ? 0 : memory + 1; break;
+			case '-': memory = memory == 0 ? 15 : memory - 1; break;
+			case '@': return true;
+			default: memory = mp[row][col] - '0';
+			}
 
-	if (mp[row][col] == '@')return true;
-	switch (mp[row][col]) {
-	case '>':
-		dir = 3;
-		break;
-	case '<':
-		dir = 0;
-		break;
-	case '^':
-		dir = 1;
-		break;
-	case 'v':
-		dir = 2;
-		break;
-	case '_':
-		dir = memory ? 0 : 3;
-		break;
-	case '|':
-		dir = memory ? 1 : 2;
-		break;
-	case '?':
-		
-		break;
-	case '.':
-		break;
-	case '+':
-		memory = memory == 15 ? 0 : memory + 1;
-		break;
-	case '-':
-		memory = memory == 0 ? 15 : memory - 1;
-		break;
-	default:
-		memory = mp[row][col] - '0';
-	}
+			if (path[row][col][memory][dir])break;
+			else path[row][col][memory][dir] = true;
 
-	if (mp[row][col] == '?') {
-		
-		for (int i = 0; i < 4; i++) {
-			int y = row + Y[i], x = col + X[i];
+			
+			if (mp[row][col] == '?') {
+				for (int i = 0; i < 4; i++) {
+					dir = i;
+					int y = row + Y[dir], x = col + X[dir];
 
-			//튕겨 나갈 경우 반대쪽은 이미 다른 중복문일때 하기 때문에 실행하지 않음
-			switch (i) {
-			case 0:
-				if (x != -1) {
-					if (path[row][col][memory][i])return false;
-					else path[row][col][memory][i] = true;
-					if (explore(y, x, memory, i, path))return true;
-					path[row][col][memory][i] = false;
-				}
-				break;
-			case 1:
-				if (y != -1) {
-					if (path[row][col][memory][i])return false;
-					else path[row][col][memory][i] = true;
-					if(explore(y, x, memory, i, path))return true;
-					path[row][col][memory][i] = false;
-				}
-				break;
-			case 2:
-				if (y != R) {
-					if (path[row][col][memory][i])return false;
-					else path[row][col][memory][i] = true;
-					if(explore(y, x, memory, i, path))return true;
-					path[row][col][memory][i] = false;
-				}
-				break;
-			case 3:
-				if (x != C) {
-					if (path[row][col][memory][i])return false;
-					else path[row][col][memory][i] = true;
-					if(explore(y, x, memory, i, path))return true;
-					path[row][col][memory][i] = false;
+					switch (dir) {
+					case 0: if (x == C) x = 0; break;
+					case 1: if (y == R) y = 0; break;
+					case 2: if (x == -1) x = C - 1; break;
+					case 3: if (y == -1) y = R - 1; break;
+					}
+					que.push(make_tuple(y, x, memory, dir));
 				}
 				break;
 			}
-			
-			
+			else {
+				row = row + Y[dir], col = col + X[dir];
+				switch (dir) {
+				case 0: if (col == C) col = 0; break;
+				case 1: if (row == R) row = 0; break;
+				case 2: if (col == -1) col = C - 1; break;
+				case 3: if (row == -1) row = R - 1; break;
+				}
+			}
 		}
-		
-	}
-	else {
-		int y = row + Y[dir], x = col + X[dir];
-		//튕겨나가는 부분
-		switch(dir) {
-			case 0:
-				if (x == -1) {
-					dir = 3;
-					x = col + X[dir];
-				}
-				break;
-			case 1:
-				if (y == -1) {
-					dir = 2;
-					y = row + X[dir];
-				}
-				break;
-			case 2:
-				if (y == R) {
-					dir = 1;
-					y = row + X[dir];
-				}
-				break;
-			case 3:
-				if (x == C) {
-					dir = 0;
-					x = col + X[dir];
-				}
-				break;
-		}
-		if (path[row][col][memory][dir])return false;
-		else path[row][col][memory][dir] = true;
-		if (explore(y, x, memory, dir, path))return true;
-		path[row][col][memory][dir] = false;
 	}
 	return false;
 }
@@ -213,16 +155,104 @@ int main() {
 	int T;
 	setbuf(stdout, NULL);
 	ios::sync_with_stdio(false);
-	
+
 	cin >> T;
 	for (int t = 1; t <= T; t++) {
-		bool finish = false;
+		memset(path, false, 20 * 20 * 16 * 4);
 		cin >> R >> C;
 		for (int i = 0; i < R; i++)
 			cin >> mp[i];
-		int row = 0, col = 0, dir = 3, memory = 0; //rot 0:왼쪽 1:위 2:아래 3:오른쪽
-		bool path[20][20][16][4] = {}; //row, col, val, dir 반복 되는 사이클 체크
-		cout << "#" << t << " " << (explore(row, col, memory, dir, path) ? "YES" : "NO") << "\n";
+		int row = 0, col = 0, dir = 0, memory = 0; // 0:오른쪽 1:아래 2:위 3:왼쪽
+
+		cout << "#" << t << " " << (explore(row, col, memory, dir) ? "YES" : "NO") << "\n";
 	}
 	return 0;
 }
+
+*/
+
+
+
+
+
+
+/*
+&Solution
+꽤 재밌는 시뮬레이션 문제
+if로 해버리면 비교를 자주해야하므로 case문으로 작성했고
+스택메모리 오버플로우 때문에 고생했는데 재귀말고
+queue를 이용해서 풀이했다 굿굿
+근데 queue사용해서 하니깐 좀 많이 느리긴하네 ㅠ
+c++
+```
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+
+using namespace std;
+
+const int dr[4] = { 0, 1, 0, -1 };
+const int dc[4] = { 1, 0, -1, 0 };
+
+char mp[22][22];
+int chk[22][22][4][15];
+int memory;
+int R, C;
+
+bool go(int r, int c, int d, int depth) {
+	bool ret = false;
+
+	if ('0' <= mp[r][c] && mp[r][c] <= '9') memory = mp[r][c] - '0';
+	else if (mp[r][c] == '>' || (mp[r][c] == '_' && memory == 0)) d = 0;
+	else if (mp[r][c] == 'v' || (mp[r][c] == '|' && memory == 0)) d = 1;
+	else if (mp[r][c] == '<' || mp[r][c] == '_') d = 2;
+	else if (mp[r][c] == '^' || mp[r][c] == '|') d = 3;
+	else if (mp[r][c] == '+') memory = (memory + 1) % 16;
+	else if (mp[r][c] == '-' && memory == 0) memory = 15;
+	else if (mp[r][c] == '-') memory -= 1;
+	else if (mp[r][c] == '@') return true;
+
+	if (chk[r][c][d][memory] == 1) return false;
+	else chk[r][c][d][memory] = 1;
+
+	int nr = r + dr[d];
+	int nc = c + dc[d];
+	if (nr == 0) nr = R;
+	else if (nr == R + 1) nr = 1;
+	if (nc == 0) nc = C;
+	else if (nc == C + 1) nc = 1;
+
+	if (mp[r][c] == '?') {
+		for (int i = 0; i < 4; i++) {
+			nr = r + dr[i];
+			nc = c + dc[i];
+			if (nr == 0) nr = R;
+			else if (nr == R + 1) nr = 1;
+			if (nc == 0) nc = C;
+			else if (nc == C + 1) nc = 1;
+			ret = max(go(nr, nc, i, depth + 1), ret);
+		}
+		return ret;
+	}
+	else return max(ret, go(nr, nc, d, depth + 1));
+}
+
+int main(void) {
+	int tcase;
+	scanf("%d", &tcase);
+	for (int t = 1; t <= tcase; t++) {
+		memset(mp, -1, sizeof(mp));
+		memset(chk, -1, sizeof(chk));
+		scanf("%d %d", &R, &C);
+		for (int i = 1; i <= R; i++) {
+			for (int j = 1; j <= C; j++) {
+				scanf(" %c", &mp[i][j]);
+			}
+		}
+		printf("#%d %s\n", t, go(1, 1, 0, 0) ? "YES" : "NO");
+		memory = 0;
+	}
+	return 0;
+}
+
+*/

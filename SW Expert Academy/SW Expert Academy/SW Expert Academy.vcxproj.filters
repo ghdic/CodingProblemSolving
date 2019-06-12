@@ -39,5 +39,8 @@
     <ClCompile Include="1824. 혁진이의 프로그램 검증 D4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1226. [S W 문제해결 기본] 7일차 - 미로1 D4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

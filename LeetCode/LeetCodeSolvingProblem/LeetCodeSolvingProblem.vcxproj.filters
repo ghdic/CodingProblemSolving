@@ -264,6 +264,9 @@
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="84. Largest Rectangle in Histogram.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h">

@@ -1,10 +1,17 @@
 ﻿import os
 import time
+import re
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
+
+def cleanText(readData):
+    #텍스트에 포함되어 있는 특수 문자 제거
+    text = re.sub('[\/:*\?\"\\‘|\<\>`\']', ' ', readData)
+    return text
+
 print("문제 url을 입력해주세요")
 url = input()
 options = webdriver.ChromeOptions()
@@ -28,7 +35,7 @@ except TimeoutException:
 
 # ============================================================
 path = "../LeetCodeSolvingProblem"
-title = driver.find_element_by_css_selector("div.css-v3d350").text
+title = cleanText(driver.find_element_by_css_selector("div.css-v3d350").text)
 if(os.path.exists(path+"\\"+title+".cpp")):
     print("file exist!")
     time.sleep(1)
