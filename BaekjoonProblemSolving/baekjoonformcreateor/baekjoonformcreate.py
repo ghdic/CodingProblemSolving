@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+﻿from bs4 import BeautifulSoup
 import requests
 import os
 import time
@@ -27,8 +27,9 @@ f.write("/*\n")
 f.write(url + "\n\n")
 
 f.write("&Title\n")
-title = cleanText(soup.find("div", {"class": "page-header"}))
+title = soup.find("div", {"class": "page-header"})
 title = title.get_text().replace("\n","")
+title = cleanText(title)
 f.write(title + "\n\n")
 
 f.write("&Question\n")

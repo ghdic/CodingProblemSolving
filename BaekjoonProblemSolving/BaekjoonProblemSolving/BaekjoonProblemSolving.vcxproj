@@ -99,7 +99,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -142,7 +142,9 @@
     <Text Include="Form.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1011.cpp" />
     <ClCompile Include="1074.cpp" />
+    <ClCompile Include="10989.cpp" />
     <ClCompile Include="1193.cpp" />
     <ClCompile Include="1475.cpp" />
     <ClCompile Include="1543.cpp" />
@@ -160,6 +162,7 @@
     <ClCompile Include="15666.cpp" />
     <ClCompile Include="15740.cpp" />
     <ClCompile Include="2292.cpp" />
+    <ClCompile Include="2751.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
