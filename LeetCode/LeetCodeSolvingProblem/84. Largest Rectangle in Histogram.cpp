@@ -21,6 +21,7 @@ Output: 10
 
 */
 
+/*
 #include "header.h"
 
 class Solution {
@@ -63,9 +64,13 @@ int main() {
 	cout << Solution().largestRectangleArea(heights) << endl;
 	return 0;
 }
+*/
+
 /*
 dp 이용해서 풀면 된다
-아직 이해가 안돼서 소스 이해중 ing...
+자기보다 왼쪽에 있는 원소들중 자기보다 큰것이 있는가?의 개수
+자기보다 오른쪽에 있는 원소들 중 자기보다 큰것이 있는가?의 개수에을구하고
+그 두개의 값의 합 - 1 이 len이 된다. 
 c++
 스택을 이용해서
 ```

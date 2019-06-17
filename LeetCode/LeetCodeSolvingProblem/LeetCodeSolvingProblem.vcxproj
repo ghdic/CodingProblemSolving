@@ -102,6 +102,7 @@
     <ClCompile Include="82. Remove Duplicates from Sorted List II.cpp" />
     <ClCompile Include="83. Remove Duplicates from Sorted List.cpp" />
     <ClCompile Include="84. Largest Rectangle in Histogram.cpp" />
+    <ClCompile Include="85. Maximal Rectangle.cpp" />
     <ClCompile Include="9. Palindrome Number.cpp" />
   </ItemGroup>
   <ItemGroup>
