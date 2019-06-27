@@ -48,9 +48,6 @@
     <ClCompile Include="7장 분할 정복\울타리 잘라내기.cpp">
       <Filter>Source Files\CH.07 분할, 정복</Filter>
     </ClCompile>
-    <ClCompile Include="팬미팅.cpp">
-      <Filter>Source Files\CH.07 분할, 정복</Filter>
-    </ClCompile>
     <ClCompile Include="8장 동적 계획법\삼각형위의최대경로.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
@@ -63,16 +60,25 @@
     <ClCompile Include="8장 동적 계획법\외발뛰기.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
-    <ClCompile Include="8장 동적 계획법\최대 증가 부분 수열.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="7장 분할 정복\팬미팅.cpp">
+      <Filter>Source Files\CH.07 분할, 정복</Filter>
     </ClCompile>
-    <ClCompile Include="8장 동적 계획법\합친LIS.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="8장 동적 계획법\Quantization.cpp">
+      <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
     <ClCompile Include="8장 동적 계획법\원주율 외우기.cpp">
+      <Filter>Source Files\CH.08 동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="8장 동적 계획법\최대 증가 부분 수열.cpp">
+      <Filter>Source Files\CH.08 동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="8장 동적 계획법\합친LIS.cpp">
+      <Filter>Source Files\CH.08 동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="8장 동적 계획법\TILING2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Quantization.cpp">
+    <ClCompile Include="8장 동적 계획법\TRIPATHCNT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -7,6 +7,7 @@
 사용하도록 양자화하려고 한다.
 오차 제곱의 합을 최소화하는 양자화 결과를 출력하는 프로그램을 작성하시오
 */
+/*
 #include <iostream>
 #include <algorithm>
 #include <cstring> //memset
@@ -86,3 +87,4 @@ int main(void)
 	}
 	return 0;
 }
+*/

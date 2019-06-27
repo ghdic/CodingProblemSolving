@@ -23,32 +23,32 @@
     <ProjectGuid>{11F20875-F387-4610-8C4F-2C3508072CF7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>algospot</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -147,6 +147,10 @@
     <ClCompile Include="7장 분할 정복\예제.cpp" />
     <ClCompile Include="7장 분할 정복\울타리 잘라내기.cpp" />
     <ClCompile Include="7장 분할 정복\쿼드 트리 뒤집기.cpp" />
+    <ClCompile Include="7장 분할 정복\팬미팅.cpp" />
+    <ClCompile Include="8장 동적 계획법\Quantization.cpp" />
+    <ClCompile Include="8장 동적 계획법\TILING2.cpp" />
+    <ClCompile Include="8장 동적 계획법\TRIPATHCNT.cpp" />
     <ClCompile Include="8장 동적 계획법\삼각형위의최대경로.cpp" />
     <ClCompile Include="8장 동적 계획법\예제.cpp" />
     <ClCompile Include="8장 동적 계획법\와일드카드.cpp" />
@@ -154,8 +158,6 @@
     <ClCompile Include="8장 동적 계획법\원주율 외우기.cpp" />
     <ClCompile Include="8장 동적 계획법\최대 증가 부분 수열.cpp" />
     <ClCompile Include="8장 동적 계획법\합친LIS.cpp" />
-    <ClCompile Include="Quantization.cpp" />
-    <ClCompile Include="팬미팅.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
