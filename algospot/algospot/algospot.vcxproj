@@ -148,7 +148,9 @@
     <ClCompile Include="7장 분할 정복\울타리 잘라내기.cpp" />
     <ClCompile Include="7장 분할 정복\쿼드 트리 뒤집기.cpp" />
     <ClCompile Include="7장 분할 정복\팬미팅.cpp" />
+    <ClCompile Include="8장 동적 계획법\ASYMTILING.cpp" />
     <ClCompile Include="8장 동적 계획법\Quantization.cpp" />
+    <ClCompile Include="8장 동적 계획법\SNAIL.cpp" />
     <ClCompile Include="8장 동적 계획법\TILING2.cpp" />
     <ClCompile Include="8장 동적 계획법\TRIPATHCNT.cpp" />
     <ClCompile Include="8장 동적 계획법\삼각형위의최대경로.cpp" />
