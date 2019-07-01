@@ -87,5 +87,8 @@
     <ClCompile Include="8장 동적 계획법\TRIPATHCNT.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
+    <ClCompile Include="8장 동적 계획법\POLY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
