@@ -10,11 +10,20 @@ def cleanText(readData):
     text = re.sub('[\/:*\?\"\\‘|\<\>`\']', ' ', readData)
     return text
 
-print("문제 번호를 입력해주세요")
-problem = input()
-url = 'https://www.acmicpc.net/problem/' + problem
+
+print("문제 url를 입력해주세요")
+url = input()
+
 req = requests.get(url)
 soup = BeautifulSoup(req.text, 'html.parser')
+
+problem = url.split("/")[-1]
+if url.find("contest") != -1:
+    title = soup.find("div", {"class": "page-header"})
+    title = title.get_text().replace("\n","")
+    title = cleanText(title)
+    problem = title
+
 # ============================================================
 path = "../BaekjoonProblemSolving"
 if(os.path.exists(path+"\\"+problem+".cpp")):

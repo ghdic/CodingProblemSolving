@@ -26,5 +26,8 @@
     <ClCompile Include="14490.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="17300번 - A번 - 패턴.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

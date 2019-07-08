@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClCompile Include="14490.cpp" />
     <ClCompile Include="1495.cpp" />
+    <ClCompile Include="17300번 - A번 - 패턴.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
