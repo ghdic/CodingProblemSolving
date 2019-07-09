@@ -161,7 +161,11 @@
     <ClCompile Include="8장 동적 계획법\원주율 외우기.cpp" />
     <ClCompile Include="8장 동적 계획법\최대 증가 부분 수열.cpp" />
     <ClCompile Include="8장 동적 계획법\합친LIS.cpp" />
+    <ClCompile Include="9장 동적 계획법 테크닉\여행 짐 싸기.cpp" />
     <ClCompile Include="NUMB3RS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="9장 동적 계획법 테크닉\문제목록.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
