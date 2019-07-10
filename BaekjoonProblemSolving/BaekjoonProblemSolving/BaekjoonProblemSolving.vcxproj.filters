@@ -26,7 +26,22 @@
     <ClCompile Include="14490.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="17300번 - A번 - 패턴.cpp">
+    <ClCompile Include="11051.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1850.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2740.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1094.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2903.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10757.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
