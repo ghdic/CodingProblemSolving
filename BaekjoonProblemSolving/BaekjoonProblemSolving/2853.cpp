@@ -74,3 +74,35 @@ int main() {
 	return 0;
 }
 */
+
+/*
+#include <cstdio>
+#include <algorithm>
+#include <unordered_map>
+using namespace std;
+int n;
+int arr[5001];
+bool check[5001];
+unordered_map<int, int> save;
+int answer, cnt;
+int main() {
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++i)scanf("%d", &arr[i]), save[arr[i]] = i;
+	check[0] = true;
+	for (int i = 1; i < n; ++i) {
+		if (check[i]) continue;
+		int dif = arr[i] - 1;
+		++answer;
+		for (int j = arr[i]; j <= arr[n - 1]; j += dif) {
+			int idx = save[j]; // 만약 해당하는 key에 대한 순서가 있을 경우 val반환 없을 경우 0 반환한다.
+			if (!check[idx]) { // 결국 0을 반환하지 않았을때 해당 날짜부분을 check해주는 것이다.
+				check[idx] = true;
+				++cnt;
+			}
+		}
+		if (cnt == n - 1)break;
+	}
+	printf("%d\n", answer);
+	return 0;
+}
+*/
