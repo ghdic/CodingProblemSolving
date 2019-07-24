@@ -30,6 +30,7 @@
     <ClCompile Include="7732. 시간 개념 D3.cpp" />
     <ClCompile Include="7733. 치즈 도둑 D4.cpp" />
     <ClCompile Include="7792. 반장 선출 D4.cpp" />
+    <ClCompile Include="7965. 퀴즈 D4.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
