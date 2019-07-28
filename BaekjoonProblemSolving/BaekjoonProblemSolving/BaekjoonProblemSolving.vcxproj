@@ -142,6 +142,7 @@
     <Text Include="Form.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="2170.cpp" />
     <ClCompile Include="2533.cpp" />
     <ClCompile Include="2820.cpp" />
     <ClCompile Include="5721.cpp" />
