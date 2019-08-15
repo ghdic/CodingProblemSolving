@@ -57,5 +57,8 @@
     <ClCompile Include="8191. 만화책 정렬하기 D5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="8189. 우편함 D4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
