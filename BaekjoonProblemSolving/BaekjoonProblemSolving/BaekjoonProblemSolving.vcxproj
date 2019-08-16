@@ -104,6 +104,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalOptions>/expectedoutputsize:1000000000 %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -151,6 +152,7 @@
     <ClCompile Include="2170.cpp" />
     <ClCompile Include="2533.cpp" />
     <ClCompile Include="2820.cpp" />
+    <ClCompile Include="2933.cpp" />
     <ClCompile Include="5419.cpp" />
     <ClCompile Include="5721.cpp" />
     <ClCompile Include="7576.cpp" />
