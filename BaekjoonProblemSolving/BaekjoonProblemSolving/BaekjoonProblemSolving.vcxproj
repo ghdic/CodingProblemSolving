@@ -150,11 +150,20 @@
     <ClCompile Include="14499.cpp" />
     <ClCompile Include="14500.cpp" />
     <ClCompile Include="14501.cpp" />
+    <ClCompile Include="14502.cpp" />
     <ClCompile Include="14888.cpp" />
     <ClCompile Include="14889.cpp" />
+    <ClCompile Include="14890.cpp" />
+    <ClCompile Include="14891.cpp" />
+    <ClCompile Include="15683.cpp" />
+    <ClCompile Include="15684.cpp" />
+    <ClCompile Include="15685.cpp" />
+    <ClCompile Include="15686.cpp" />
+    <ClCompile Include="17142.cpp" />
     <ClCompile Include="17144.cpp" />
     <ClCompile Include="17406.cpp" />
     <ClCompile Include="3190.cpp" />
+    <ClCompile Include="5373.cpp" />
     <ClCompile Include="6603.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
