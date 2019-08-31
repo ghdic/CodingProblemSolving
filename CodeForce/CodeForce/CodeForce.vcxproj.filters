@@ -18,5 +18,14 @@
     <ClCompile Include="R582-A.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="R582-B.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R582-C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R582-D1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

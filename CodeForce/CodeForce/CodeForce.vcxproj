@@ -144,6 +144,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="R582-A.cpp" />
+    <ClCompile Include="R582-B.cpp" />
+    <ClCompile Include="R582-C.cpp" />
+    <ClCompile Include="R582-D1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
