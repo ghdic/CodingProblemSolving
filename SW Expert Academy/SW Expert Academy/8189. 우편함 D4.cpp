@@ -60,6 +60,7 @@ sample_input.txt
   sample_output.txt
 */
 
+/*
 #include <iostream>
 using namespace std;
 
@@ -107,3 +108,4 @@ int main() {
 	}
 	return 0;
 }
+*/
