@@ -63,5 +63,8 @@
     <ClCompile Include="1767. [SW Test 샘플문제] 프로세서 연결하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2383. [모의 SW 역량테스트] 점심 식사시간.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

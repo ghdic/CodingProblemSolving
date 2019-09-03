@@ -23,6 +23,7 @@
     <ClCompile Include="1240. [S W 문제해결 응용] 1일차 - 단순 2진 암호코드 D3.cpp" />
     <ClCompile Include="1767. [SW Test 샘플문제] 프로세서 연결하기.cpp" />
     <ClCompile Include="1824. 혁진이의 프로그램 검증 D4.cpp" />
+    <ClCompile Include="2383. [모의 SW 역량테스트] 점심 식사시간.cpp" />
     <ClCompile Include="4014. [모의 SW 역량테스트] 활주로 건설.cpp" />
     <ClCompile Include="7333. 한솔이의 택배 아르바이트 D4.cpp" />
     <ClCompile Include="7466. 팩토리얼과 최대공약수 D4.cpp" />
