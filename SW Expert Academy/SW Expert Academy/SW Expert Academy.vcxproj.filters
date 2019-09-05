@@ -66,5 +66,17 @@
     <ClCompile Include="2383. [모의 SW 역량테스트] 점심 식사시간.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2382. [모의 SW 역량테스트] 미생물 격리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1949. [모의 SW 역량테스트] 등산로 조성.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1952. [모의 SW 역량테스트] 수영장.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5650. [모의 SW 역량테스트] 핀볼 게임.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

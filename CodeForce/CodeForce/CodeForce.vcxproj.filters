@@ -27,5 +27,11 @@
     <ClCompile Include="R582-D1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="R583-A.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="R583-B.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -147,6 +147,8 @@
     <ClCompile Include="R582-B.cpp" />
     <ClCompile Include="R582-C.cpp" />
     <ClCompile Include="R582-D1.cpp" />
+    <ClCompile Include="R583-A.cpp" />
+    <ClCompile Include="R583-B.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
