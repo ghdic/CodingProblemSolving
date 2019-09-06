@@ -78,5 +78,8 @@
     <ClCompile Include="5650. [모의 SW 역량테스트] 핀볼 게임.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2112. [모의 SW 역량테스트] 보호 필름.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

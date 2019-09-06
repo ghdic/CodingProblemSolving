@@ -155,18 +155,47 @@ sample_output.txt
 
 /*
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-int n;
-int money[4] = { 10, 40, 100, 300 };
-int month[4] = { 1, 1, 3, 12 };
+int a, b, c, d, result;
+int money[4];
+int plan[12];
+
+void dfs(int m, int cost) {
+	if (cost > result)return;
+	if (m >= 12) {
+		result = min(result, cost);
+		return;
+	}
+
+	if (plan[m] == 0) {
+		dfs(m + 1, cost);
+	}
+	else {
+		int k = (money[0] * plan[m] < money[1] ? money[0] * plan[m] : money[1]);
+		dfs(m + 1, cost + k);
+		dfs(m + 3, cost + money[2]);
+		dfs(m + 12, cost + money[3]);
+	}
+}
+
+void init() {
+	result = 987654321;
+	cin >> money[0] >> money[1] >> money[2] >> money[3];
+	for (int i = 0; i < 12; ++i)
+		cin >> plan[i];
+}
+
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	int T;
 	cin >> T;
 	for (int t = 1; t <= T; ++t) {
-
+		init();
+		dfs(0, 0);
+		cout << "#" << t << " " << result << "\n";
 	}
 	return 0;
 }
