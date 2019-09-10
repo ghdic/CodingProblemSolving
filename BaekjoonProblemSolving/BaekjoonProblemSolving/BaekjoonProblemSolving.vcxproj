@@ -145,31 +145,8 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12100.cpp" />
-    <ClCompile Include="13458.cpp" />
-    <ClCompile Include="14499.cpp" />
-    <ClCompile Include="14500.cpp" />
-    <ClCompile Include="14501.cpp" />
-    <ClCompile Include="14502.cpp" />
-    <ClCompile Include="14888.cpp" />
-    <ClCompile Include="14889.cpp" />
-    <ClCompile Include="14890.cpp" />
-    <ClCompile Include="14891.cpp" />
-    <ClCompile Include="15683.cpp" />
-    <ClCompile Include="15684.cpp" />
-    <ClCompile Include="15685.cpp" />
-    <ClCompile Include="15686.cpp" />
-    <ClCompile Include="16234.cpp" />
-    <ClCompile Include="16235.cpp" />
-    <ClCompile Include="16236.cpp" />
-    <ClCompile Include="17140.cpp" />
-    <ClCompile Include="17142.cpp" />
-    <ClCompile Include="17143.cpp" />
-    <ClCompile Include="17144.cpp" />
-    <ClCompile Include="17406.cpp" />
-    <ClCompile Include="3190.cpp" />
-    <ClCompile Include="5373.cpp" />
-    <ClCompile Include="6603.cpp" />
+    <ClCompile Include="1600.cpp" />
+    <ClCompile Include="2346.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
