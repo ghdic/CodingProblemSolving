@@ -29,7 +29,22 @@
     <ClCompile Include="2346.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1600.cpp">
+    <ClCompile Include="11967.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2605.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2607.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2608.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11055.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6359.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
