@@ -36,5 +36,17 @@
     <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍7.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="level1\문제1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level1\문제2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level2\문제1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="level2\level2문제2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
