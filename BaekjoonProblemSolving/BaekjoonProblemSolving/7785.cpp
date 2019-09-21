@@ -40,31 +40,79 @@ Artem
 */
 
 /*
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
-#include <set>
-#include <iterator>
+#include <vector>
+#include <algorithm>
+#include <unordered_map>
 using namespace std;
 
+int n;
+unordered_map<string, string> um;
+string a, b;
 int main() {
-	int N;
-	cin >> N;
-	set<string> s;
-	for (int i = 0; i < N; i++) {
-		string a, b;
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+	cin >> n;
+	while (n--) {
 		cin >> a >> b;
 		if (b == "enter") {
-			s.insert(a);
+			um[a] = a;
 		}
-		else if(b == "leave") {
-			s.erase(s.find(a));
+		else {
+			um.erase(a);
 		}
 	}
-	
-	set<string>::reverse_iterator riter;
-	for (riter = s.rbegin(); riter != s.rend(); ++riter)
-		cout << *riter << endl;
+	vector<string> res(um.size());
+	auto value_selector = [](auto pair) {return pair.second; };
+	transform(um.begin(), um.end(), res.begin(), value_selector);
+	sort(res.begin(), res.end(), greater<string>());
+	for (auto k : res)
+		cout << k << '\n';
 	return 0;
 }
+*/
+
+// 천잰가 이사람?
+/*
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+int main(int argc, const char * argv[]) {
+	ios_base::sync_with_stdio(false);
+	vector<string> enter;
+	vector<string> leave;
+	int inNum,n=0;
+	string inStr1,inStr2;
+
+	cin>>inNum;
+
+	while(inNum--){
+		cin>>inStr1;
+		cin>>inStr2;
+		if(inStr2=="enter")
+			enter.emplace_back(inStr1);
+		else
+			leave.emplace_back(inStr1);
+	}
+	sort(enter.begin(),enter.end());
+	sort(leave.begin(),leave.end());
+
+	for(int i=0;i<enter.size();i++){
+		if(n==leave.size()){
+			cout<<enter[enter.size()-i-1]<<'\n';
+			continue;
+		}
+		if(leave[leave.size()-n-1]!=enter[enter.size()-i-1])
+			cout<<enter[enter.size()-i-1]<<'\n';
+		else
+			n+=1;
+	}
+
+	return 0;
+}
+
 */
