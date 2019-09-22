@@ -193,3 +193,57 @@ int main() {
 	return 0;
 }
 */
+
+/*
+// 소스퀼 오진다리..
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int n, a[10];
+vector<int> gph[11];
+int vis[11], col[11];
+
+void dfs(int x) {
+	if (vis[x])return;
+	vis[x] = 1;
+	for (auto& i : gph[x])
+		if (!vis[i] && col[i] == col[x])dfs(i);
+}
+
+int main() {
+	cin >> n;
+	for (int i = 0; i < n; ++i)
+		cin >> a[i];
+	for (int i = 0; i < n; ++i) {
+		int x; cin >> x;
+		gph[i].resize(x);
+		for (auto& j : gph[i]) {
+			cin >> j;
+			j--;
+		}
+	}
+	int dap = 1e9;
+	for (int i = 1; i < (1 << n) - 1; ++i) {
+		int x = 0;
+		for (int j = 0; j < n; ++j) {
+			col[j] = (i >> j) & 1;
+			if (col[j]) x += a[j];
+			else x -= a[j];
+		}
+		memset(vis, 0, sizeof(vis));
+		int cnt = 0;
+		for (int j = 0; j < n; ++j) {
+			if (!vis[j]) {
+				dfs(j);
+				++cnt;
+			}
+		}
+		if (cnt == 2)dap = min(dap, abs(x));
+	}
+	if (dap > 1e8)dap = -1;
+	cout << dap << endl;
+}
+*/
