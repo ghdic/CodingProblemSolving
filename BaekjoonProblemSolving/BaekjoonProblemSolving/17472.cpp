@@ -110,7 +110,122 @@ M이 주어진다. 둘째 줄부터 N개의 줄에 지도의 정보가 주어진
 4. 이때의 최소를 구한다
 */
 
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+#define NOT_FOUND -1
+#define WATER 0
+using namespace std;
+int n, m;
+int field[10][10];
+struct Pos {
+	int x, y;
+};
+struct Bridge {
+	int src, dest, len;
+	bool operator < (const struct Bridge& rhs) const {
+		return len < rhs.len;
+	}
+};
+
+bool isin(Pos p) {
+	return p.x >= 0 && p.y >= 0 && p.x < n && p.y < m;
+}
+
+struct Island {
+	vector<Pos> edge; // 물과 맞닿은 지점 좌표
+};
+
+vector<Bridge> bridges;
+Island islands[7];
+const Pos d[4] = { {0, 1}, {1, 0}, {-1, 0}, {0, -1} };
+
+void find_island(Pos pos, int id) {
+	field[pos.x][pos.y] = id;
+	int water = 0;
+	for (int k = 0; k < 4; ++k) {
+		Pos nx = { pos.x + d[k].x, pos.y + d[k].y };
+		if (isin(nx)) {
+			if (field[nx.x][nx.y] == NOT_FOUND) {
+				find_island(nx, id);
+			}
+			else if (field[nx.x][nx.y] == WATER) {
+				++water;
+			}
+		}
+	}
+	if (water) {
+		islands[id].edge.push_back(pos);
+	}
+}
+
+void try_bridge(const Pos pos) {
+	const int id = field[pos.x][pos.y];
+	for (int k = 0; k < 4; ++k) {
+		Pos p = { pos.x + d[k].x, pos.y + d[k].y };
+		int len = 0;
+		int dest = 0;
+		while (isin(p) && field[p.x][p.y] == 0) {
+			p.x += d[k].x;
+			p.y += d[k].y;
+			++len;
+		}
+		if (isin(p))
+			dest = field[p.x][p.y];
+		if (len >= 2 && dest)
+			bridges.push_back({ id, dest, len });
+	}
+}
+
+int dsu[7];
+int dsu_find(int p) {
+	while (dsu[p] != p) {
+		p = dsu[p];
+	}
+	return p;
+}
+
+int main() {
+	int island_cnt = 1;
+	cin >> n >> m;
+	for(int i = 0; i < n; ++i)
+		for (int j = 0; j < m; ++j) {
+			cin >> field[i][j];
+			if (field[i][j])field[i][j] = -1;
+		}
+	for(int i = 0; i < n; ++i)
+		for (int j = 0; j < m; ++j) {
+			if (field[i][j] == NOT_FOUND) {
+				dsu[island_cnt] = island_cnt;
+				find_island({ i, j }, island_cnt++);
+			}
+		}
+	for (int i = 1; i < island_cnt; ++i) {
+		for (Pos p : islands[i].edge)
+			try_bridge(p);
+	}
+	// 최소 스패닝 트리 만들기
+	sort(bridges.begin(), bridges.end());
+	int total_len = 0;
+	for(auto b : bridges)
+		if (dsu_find(b.src) != dsu_find(b.dest)) {
+			total_len += b.len;
+			// disjoint set merge
+			dsu[dsu_find(b.src)] = dsu_find(b.dest);
+		}
+
+	// 최소 스패닝 트리에 모든 섬이 포함되었는지 확인
+	int dsu_first = dsu_find(1);
+	for (int i = 2; i < island_cnt; ++i)
+		if (dsu_first != dsu_find(i))
+			total_len = -1;
+	cout << total_len << endl;
+}
 /*
+// 런타임 에러 해결못하겠다;;
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -265,8 +380,8 @@ int main() {
 	cout << result << endl;
 	return 0;
 }
-*/
 
+*/
 
 /*
 // 이거는 A형때처럼 섬이 직사각형일로 구현해버림 ㅠ ㅋ
