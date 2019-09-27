@@ -110,7 +110,7 @@ M이 주어진다. 둘째 줄부터 N개의 줄에 지도의 정보가 주어진
 4. 이때의 최소를 구한다
 */
 
-
+/*
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -223,6 +223,8 @@ int main() {
 			total_len = -1;
 	cout << total_len << endl;
 }
+*/
+
 /*
 // 런타임 에러 해결못하겠다;;
 
