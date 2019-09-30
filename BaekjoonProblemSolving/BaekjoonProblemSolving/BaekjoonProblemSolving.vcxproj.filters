@@ -26,31 +26,13 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="17136.cpp">
+    <ClCompile Include="2960.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2869.cpp">
+    <ClCompile Include="3896.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2805.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10171.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10093.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1267.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11328.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="5397.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1919.cpp">
+    <ClCompile Include="1124.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
