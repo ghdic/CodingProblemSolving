@@ -145,9 +145,8 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1124.cpp" />
-    <ClCompile Include="2960.cpp" />
-    <ClCompile Include="3896.cpp" />
+    <ClCompile Include="14646.cpp" />
+    <ClCompile Include="14648.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

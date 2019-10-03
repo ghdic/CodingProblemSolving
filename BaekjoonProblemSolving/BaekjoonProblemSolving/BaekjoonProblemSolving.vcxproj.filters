@@ -26,13 +26,10 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2960.cpp">
+    <ClCompile Include="14648.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="3896.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1124.cpp">
+    <ClCompile Include="14646.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
