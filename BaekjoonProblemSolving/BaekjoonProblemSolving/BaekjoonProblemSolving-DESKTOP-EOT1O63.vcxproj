@@ -23,7 +23,7 @@
     <ProjectGuid>{3D01CC2A-FC3C-4779-BAB9-91DA9D716569}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BaekjoonProblemSolving</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -98,7 +98,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -146,15 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1035.cpp" />
-    <ClCompile Include="1331.cpp" />
     <ClCompile Include="14710.cpp" />
-    <ClCompile Include="15707.cpp" />
     <ClCompile Include="1855.cpp" />
     <ClCompile Include="1996.cpp" />
     <ClCompile Include="2037.cpp" />
     <ClCompile Include="2160.cpp" />
-    <ClCompile Include="2615.cpp" />
-    <ClCompile Include="2641.cpp" />
     <ClCompile Include="2823.cpp" />
     <ClCompile Include="4606.cpp" />
     <ClCompile Include="4659.cpp" />
