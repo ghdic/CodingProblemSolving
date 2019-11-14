@@ -37,23 +37,16 @@ ABBAS SALAM
 
 */
 
-/*
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 int p, w; // 버튼 누르는 시간, 연속으로 찍기 위해 기다리는 시간
 string s;
-int map[91];
 
 int main() {
 	ios::sync_with_stdio(false);
-	int idx = 'A';
-	for (int i = 2; i <= 9; ++i)
-		for (int j = 1; j <= 3; ++j)
-			map[idx++] = j;
-	map[idx++] = 4;
-	map[' '] = 1;
 
 	cin >> p >> w;
 	cin.ignore();
@@ -67,20 +60,20 @@ int main() {
 		}
 		else {
 			int add = 0;
-			for (int j = 0; j <= 7; ++j) {
+			for (int j = 2; j <= 9; ++j) {
 				int item = 'A' + 3 * j + add;
-				if (j == 5 || j == 7) {
+				if (j == 7 || j == 9) {
 					if (s[i] >= item && s[i] <= item + 3) {
-						sum += (s[i] - item + 1) * p + (prev == j + 2 ? w : 0);
-						prev = j + 2;
+						sum += (s[i] - item + 1) * p + (prev == j ? w : 0);
+						prev = j;
 						
 					}
 					++add;
 				}
 				else {
 					if (s[i] >= item && s[i] <= item + 2) {
-						sum += (s[i] - item + 1) * p + (prev == j + 2 ? w : 0);
-						prev = j + 2;
+						sum += (s[i] - item + 1) * p + (prev == j ? w : 0);
+						prev = j;
 					}
 				}
 			}
@@ -89,4 +82,3 @@ int main() {
 	cout << sum << endl;
 	return 0;
 }
-*/

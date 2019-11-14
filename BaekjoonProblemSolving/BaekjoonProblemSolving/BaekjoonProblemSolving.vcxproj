@@ -98,7 +98,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -145,20 +145,22 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1035.cpp" />
-    <ClCompile Include="1331.cpp" />
-    <ClCompile Include="14710.cpp" />
-    <ClCompile Include="15707.cpp" />
-    <ClCompile Include="1855.cpp" />
-    <ClCompile Include="1996.cpp" />
-    <ClCompile Include="2037.cpp" />
-    <ClCompile Include="2160.cpp" />
-    <ClCompile Include="2615.cpp" />
-    <ClCompile Include="2641.cpp" />
-    <ClCompile Include="2823.cpp" />
-    <ClCompile Include="4606.cpp" />
-    <ClCompile Include="4659.cpp" />
-    <ClCompile Include="5671.cpp" />
+    <ClCompile Include="1012.cpp" />
+    <ClCompile Include="11403.cpp" />
+    <ClCompile Include="11724.cpp" />
+    <ClCompile Include="1260.cpp" />
+    <ClCompile Include="1600.cpp" />
+    <ClCompile Include="1697.cpp" />
+    <ClCompile Include="2178.cpp" />
+    <ClCompile Include="2573.cpp" />
+    <ClCompile Include="2583.cpp" />
+    <ClCompile Include="2667.cpp" />
+    <ClCompile Include="2842.cpp" />
+    <ClCompile Include="3850.cpp" />
+    <ClCompile Include="6593.cpp" />
+    <ClCompile Include="6603.cpp" />
+    <ClCompile Include="7562.cpp" />
+    <ClCompile Include="7576.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
