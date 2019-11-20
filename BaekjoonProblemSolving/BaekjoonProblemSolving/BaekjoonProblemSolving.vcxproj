@@ -145,22 +145,10 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1012.cpp" />
-    <ClCompile Include="11403.cpp" />
-    <ClCompile Include="11724.cpp" />
-    <ClCompile Include="1260.cpp" />
-    <ClCompile Include="1600.cpp" />
-    <ClCompile Include="1697.cpp" />
-    <ClCompile Include="2178.cpp" />
-    <ClCompile Include="2573.cpp" />
-    <ClCompile Include="2583.cpp" />
-    <ClCompile Include="2667.cpp" />
-    <ClCompile Include="2842.cpp" />
-    <ClCompile Include="3850.cpp" />
-    <ClCompile Include="6593.cpp" />
-    <ClCompile Include="6603.cpp" />
-    <ClCompile Include="7562.cpp" />
-    <ClCompile Include="7576.cpp" />
+    <ClCompile Include="18017.cpp" />
+    <ClCompile Include="1927.cpp" />
+    <ClCompile Include="2457.cpp" />
+    <ClCompile Include="8980.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

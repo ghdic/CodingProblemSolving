@@ -108,7 +108,6 @@ impossible의 경우는 어쩌지..??
 */
 
 
-/*
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -120,20 +119,46 @@ using namespace std;
 #define INF 1e9
 
 int dist[1 << MAXN];
-int prev[1 << MAXN];
+int pre[1 << MAXN];
 int shoot[1 << MAXN];
 int n, m;
-queue<int> que;
+queue<int> q;
 vector<int> adjacent[MAXN];
 int counter[MAXN];
 
 int bfs() {
-	
-	memset(dist, -1, sizeof(dist));
+	int cur_state, next_state;
+	fill(&dist[0], &dist[1 << MAXN], -1);
 	dist[1 << n - 1] = 0;
-	que.push(1 << n - 1);
-	while (!que.empty()) {
-
+	q.push(1 << n - 1);
+	while (!q.empty()) {
+		int p = q.front();
+		cur_state = 0;
+		q.pop();
+		fill(&counter[0], &counter[MAXN], 0);
+		for (int i = 0; i < n; ++i) {
+			if (p & (1 << i)) {
+				for (int j = 0; j < adjacent[i].size(); ++j) {
+					counter[adjacent[i][j]]++;
+					cur_state |= (1 << adjacent[i][j]);
+				}
+			}
+		}
+		for (int i = 0; i < n; ++i) {
+			if (p & (1 << i)) {
+				next_state = cur_state;
+				for (int j = 0; j < adjacent[i].size(); ++j)
+					if (counter[adjacent[i][j]] - 1 <= 0)
+						next_state &= ~(1 << adjacent[i][j]);
+			}
+			if (dist[next_state] == -1) {
+				dist[next_state] = dist[p] + 1;
+				q.push(next_state);
+				pre[next_state] = p;
+				shoot[next_state] = i;
+				if (next_state == 0)return dist[next_state];
+			}
+		}
 	}
+	return INF;
 }
-*/
