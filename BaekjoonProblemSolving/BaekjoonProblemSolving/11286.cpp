@@ -1,86 +1,76 @@
 /*
-https://www.acmicpc.net/problem/1927
+https://www.acmicpc.net/problem/11286
 
 &Title
-1927¹ø - ÃÖ¼Ò Èü
+11286ë²ˆ - ì ˆëŒ“ê°’ íž™
 
 &Question
-³Î¸® Àß ¾Ë·ÁÁø ÀÚ·á±¸Á¶ Áß ÃÖ¼Ò ÈüÀÌ¶ó´Â °ÍÀÌ 
-ÀÖ´Ù. ÃÖ¼Ò ÈüÀ» ÀÌ¿ëÇÏ¿© ´ÙÀ½°ú °°Àº ¿¬»êÀ» Áö¿øÇÏ´Â ÇÁ·Î±×·¥À» 
-ÀÛ¼ºÇÏ½Ã¿À.¹è¿­¿¡ ÀÚ¿¬¼ö x¸¦ ³Ö´Â´Ù.¹è¿­¿¡¼­ °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ°í, ±× 
-°ªÀ» ¹è¿­¿¡¼­ Á¦°ÅÇÑ´Ù.ÇÁ·Î±×·¥Àº Ã³À½¿¡ ºñ¾îÀÖ´Â ¹è¿­¿¡¼­ ½ÃÀÛÇÏ°Ô µÈ´Ù. 
+ì ˆëŒ“ê°’ íž™ì€ ë‹¤ìŒê³¼ ê°™ì€ ì—°ì‚°ì„ ì§€ì›í•˜ëŠ” ìžë£Œêµ¬ì¡°ì´ë‹¤.ë°°ì—´ì— ì •ìˆ˜ 
+x (x â‰  0)ë¥¼ ë„£ëŠ”ë‹¤.ë°°ì—´ì—ì„œ ì ˆëŒ“ê°’ì´ ê°€ìž¥ ìž‘ì€ ê°’ì„ 
+ì¶œë ¥í•˜ê³ , ê·¸ ê°’ì„ ë°°ì—´ì—ì„œ ì œê±°í•œë‹¤. ì ˆëŒ“ê°’ì´ ê°€ìž¥ ìž‘ì€ ê°’ì´ 
+ì—¬ëŸ¬ê°œì¼ ë•ŒëŠ”, ê°€ìž¥ ìž‘ì€ ìˆ˜ë¥¼ ì¶œë ¥í•˜ê³ , ê·¸ ê°’ì„ ë°°ì—´ì—ì„œ 
+ì œê±°í•œë‹¤.í”„ë¡œê·¸ëž¨ì€ ì²˜ìŒì— ë¹„ì–´ìžˆëŠ” ë°°ì—´ì—ì„œ ì‹œìž‘í•˜ê²Œ ëœë‹¤. 
 
 &Input
-Ã¹Â° ÁÙ¿¡ ¿¬»êÀÇ °³¼ö N(1¡ÂN¡Â100,000)ÀÌ ÁÖ¾îÁø´Ù. ´ÙÀ½ N°³ÀÇ 
-ÁÙ¿¡´Â ¿¬»ê¿¡ ´ëÇÑ Á¤º¸¸¦ ³ªÅ¸³»´Â Á¤¼ö x°¡ ÁÖ¾îÁø´Ù. ¸¸¾à 
-x°¡ ÀÚ¿¬¼ö¶ó¸é ¹è¿­¿¡ x¶ó´Â °ªÀ» ³Ö´Â(Ãß°¡ÇÏ´Â) ¿¬»êÀÌ°í, x°¡ 0ÀÌ¶ó¸é 
-¹è¿­¿¡¼­ °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ°í ±× °ªÀ» ¹è¿­¿¡¼­ Á¦°ÅÇÏ´Â 
-°æ¿ìÀÌ´Ù. ÀÔ·ÂµÇ´Â ÀÚ¿¬¼ö´Â 2^31º¸´Ù ÀÛ´Ù. 
+ì²«ì§¸ ì¤„ì— ì—°ì‚°ì˜ ê°œìˆ˜ N(1â‰¤Nâ‰¤100,000)ì´ ì£¼ì–´ì§„ë‹¤. ë‹¤ìŒ Nê°œì˜ 
+ì¤„ì—ëŠ” ì—°ì‚°ì— ëŒ€í•œ ì •ë³´ë¥¼ ë‚˜íƒ€ë‚´ëŠ” ì •ìˆ˜ xê°€ ì£¼ì–´ì§„ë‹¤. ë§Œì•½ 
+xê°€ 0ì´ ì•„ë‹ˆë¼ë©´ ë°°ì—´ì— xë¼ëŠ” ê°’ì„ ë„£ëŠ”(ì¶”ê°€í•˜ëŠ”) ì—°ì‚°ì´ê³ , xê°€ 
+0ì´ë¼ë©´ ë°°ì—´ì—ì„œ ì ˆëŒ“ê°’ì´ ê°€ìž¥ ìž‘ì€ ê°’ì„ ì¶œë ¥í•˜ê³  ê·¸ ê°’ì„ 
+ë°°ì—´ì—ì„œ ì œê±°í•˜ëŠ” ê²½ìš°ì´ë‹¤. ìž…ë ¥ë˜ëŠ” ì •ìˆ˜ëŠ” -231ë³´ë‹¤ í¬ê³ , 231ë³´ë‹¤ ìž‘ë‹¤. 
+
 
 &Output
-ÀÔ·Â¿¡¼­ 0ÀÌ ÁÖ¾îÁø È¸¼ö¸¸Å­ ´äÀ» Ãâ·ÂÇÑ´Ù. ¸¸¾à ¹è¿­ÀÌ 
-ºñ¾î ÀÖ´Â °æ¿ìÀÎµ¥ °¡Àå ÀÛÀº °ªÀ» Ãâ·ÂÇÏ¶ó°í ÇÑ °æ¿ì¿¡´Â 
-0À» Ãâ·ÂÇÏ¸é µÈ´Ù. 
+ìž…ë ¥ì—ì„œ 0ì´ ì£¼ì–´ì§„ íšŒìˆ˜ë§Œí¼ ë‹µì„ ì¶œë ¥í•œë‹¤. ë§Œì•½ ë°°ì—´ì´ 
+ë¹„ì–´ ìžˆëŠ” ê²½ìš°ì¸ë° ì ˆëŒ“ê°’ì´ ê°€ìž¥ ìž‘ì€ ê°’ì„ ì¶œë ¥í•˜ë¼ê³  í•œ 
+ê²½ìš°ì—ëŠ” 0ì„ ì¶œë ¥í•˜ë©´ ëœë‹¤. 
 
 &Example
 -input
-9
-0
-12345678
+18
 1
+-1
+0
+0
+0
+1
+1
+-1
+-1
 2
+-2
 0
 0
 0
 0
-32
+0
+0
+0
 
 -output
-0
+-1
 1
+0
+-1
+-1
+1
+1
+-2
 2
-12345678
 0
 
 
-*/
-
-/*
-#define _CRT_SECURE_NO_WARNINGS
-#include <cstdio>
-#include <queue>
-#include <functional>
-#include <vector>
-using namespace std;
-
-int main() {
-	int N, a;
-	scanf("%d", &N);
-	priority_queue<int, vector<int>, greater<int>> min_heap;
-
-	for (int i = 0; i < N; i++) {
-		scanf("%d", &a);
-		if (a == 0) {
-			if (min_heap.empty()) {
-				printf("0\n");
-			}
-			else {
-				printf("%d\n", min_heap.top());
-				min_heap.pop();
-			}
-		}
-		else {
-			min_heap.push(a);
-		}
-	}
-	return 0;
-}
 */
 
 /*
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 using namespace std;
+
+bool comp(int y, int x) {
+	int a = abs(y), b = abs(x);
+	return ((a == b && y > x) || a > b);
+}
 
 class MinHeap {
 	int* harr;
@@ -123,17 +113,24 @@ void MinHeap::insertKey(int k) {
 	heap_size++;
 	int i = heap_size - 1;
 	harr[i] = k;
-	while (i != 0 && harr[parent(i)] > harr[i]) {
-		swap(harr[i], harr[parent(i)]);
-		i = parent(i);
+	while (i != 0) {
+		
+		if (comp(harr[parent(i)], harr[i])) {
+			swap(harr[i], harr[parent(i)]);
+			i = parent(i);
+		}
+		else break;
 	}
 }
 
 void MinHeap::decreaseKey(int i, int new_val) {
 	harr[i] = new_val;
-	while (i != 0 && harr[parent(i)] > harr[i]) {
-		swap(harr[i], harr[parent(i)]);
-		i = parent(i);
+	while (i != 0) {
+		if (comp(harr[parent(i)], harr[i])) {
+			swap(harr[i], harr[parent(i)]);
+			i = parent(i);
+		}
+		else break;
 	}
 }
 
@@ -162,9 +159,9 @@ void MinHeap::MinHeapify(int i) {
 	int l = left(i);
 	int r = right(i);
 	int smallest = i;
-	if (l < heap_size && harr[l] < harr[i])
+	if (l < heap_size && comp(harr[i], harr[l]))
 		smallest = l;
-	if (r < heap_size && harr[r] < harr[smallest])
+	if (r < heap_size && comp(harr[smallest], harr[r]))
 		smallest = r;
 	if (smallest != i) {
 		swap(harr[i], harr[smallest]);
