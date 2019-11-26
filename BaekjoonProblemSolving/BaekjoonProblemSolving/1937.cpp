@@ -79,3 +79,45 @@ int main() {
 	return 0;
 }
 */
+
+/*
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int n;
+int map[500][500];
+int dp[500][500];
+int dy[4] = { -1, 0, 1, 0 }, dx[4] = { 0, 1, 0, -1 };
+
+int dfs(int y, int x) {
+	if (dp[y][x])return dp[y][x]; // 이미 방문한적 있다면 그 값 리턴
+
+	dp[y][x] = 1;
+
+	for (int i = 0; i < 4; ++i) {
+		int ty = y + dy[i], tx = x + dx[i]; // 다음 y,x좌표
+		if (ty < 0 || ty >= n || tx < 0 || tx >= n)continue;
+		if (map[y][x] >= map[ty][tx])continue; // 다음으로 가는곳이 먹이가 더 많아야댐
+		dp[y][x] = max(dp[y][x], dfs(ty, tx) + 1);
+	}
+	return dp[y][x];
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cin >> n;
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < n; ++j)
+			cin >> map[i][j];
+	}
+
+	int ans = 0;
+	for (int i = 0; i < n; ++i)
+		for (int j = 0; j < n; ++j)
+			ans = max(ans, dfs(i, j));
+	cout << ans << endl;
+	return 0;
+}
+*/

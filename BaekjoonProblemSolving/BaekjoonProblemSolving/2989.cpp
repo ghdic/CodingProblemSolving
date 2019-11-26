@@ -62,16 +62,106 @@ Y ≤ 100 000, 0 ≤ F ≤ 1000)입력은
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#define MAX 1000000
+#define MAX 100000
 using namespace std;
 
 struct pos {
 	int y, x;
 };
 
+pos start, finish;
+
 struct lotus {
 	int y, x, fly;
-	bool operator < (pos& a) {
+	bool operator < (lotus& a) {
+		return (this->y + this->x < a.y + a.x);
+	}
+};
+
+int n, k, index;
+int max_x[MAX + 1], max_y[MAX + 1];
+vector<lotus> v;
+int dp[300001];
+int path[300001];
+
+void print(int idx, int cnt) { // path을 통해 개수와 경로를 출력해줌
+	if (idx == index) {
+		cout << cnt << "\n";
+		cout << v[idx].x << " " << v[idx].y << "\n";
+		return;
+	}
+	else {
+		print(path[idx], cnt + 1);
+		cout << v[idx].x << " " << v[idx].y << "\n";
+	}
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cin >> n >> k;
+	v.reserve(n + 1);
+	int a, b, f;
+	v.push_back({ 0, 0, 0 }); // dp를 위해 덤프 하나 넣어줌
+	for (int i = 0; i < n; ++i) {
+		cin >> a >> b >> f;
+		v.push_back({ b, a, f });
+	}
+	start = { v[1].y, v[1].x }, finish = { v[n].y, v[n].x };
+	sort(v.begin(), v.end());
+
+	// dp 초기세팅 처음 start값 넣어줌
+	dp[0] = -1e9;
+	int i = 0;
+	while (v[i].y != start.y || v[i].x != start.x)++i;
+	dp[i] = v[i].fly;
+	max_y[v[i].y] = max_x[v[i].x] = i;
+	index = i;
+	++i;
+	for (; i <= n; ++i) {
+		dp[i] = -1;
+
+		int& y = max_y[v[i].y];
+		int& x = max_x[v[i].x];
+
+		if (dp[y] >= k && dp[i] < dp[y] + v[i].fly - k) {
+			dp[i] = dp[y] + v[i].fly - k;
+			
+			path[i] = y;
+		}
+		if (dp[x] >= k && dp[i] < dp[x] + v[i].fly - k) {
+			dp[i] = dp[x] + v[i].fly - k;
+			
+			path[i] = x;
+		}
+		if (dp[i] > dp[y])y = i;
+		if (dp[i] > dp[x])x = i;
+		if (v[i].y == finish.y && v[i].x == finish.x)break;
+	}
+	cout << dp[i] << "\n";
+	print(i, 1);
+	return 0;
+}
+*/
+
+
+/*
+// 메모리 초과
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#define MAX 100000
+using namespace std;
+
+struct pos {
+	int y, x;
+};
+
+pos start, finish;
+
+struct lotus {
+	int y, x, fly;
+	bool operator < (lotus& a) {
 		return (this->y + this->x < a.y + a.x);
 	}
 };
@@ -81,20 +171,67 @@ struct answer {
 };
 
 int n, k;
-pos start, end;
+int max_x[MAX + 1], max_y[MAX + 1];
 vector<lotus> v;
-answer dp[MAX][MAX];
+vector<answer> dp;
 
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cin >> n >> k;
+	dp.reserve(n);
 	int x, y, f;
 
-	for (int i = 1; i < n - 1; ++i) {
+	for (int i = 0; i < n; ++i) {
 		cin >> x >> y >> f;
-		map[y][x] = f;
+		v.push_back({ y, x, f });
 	}
+	start = { v[0].y, v[0].x }, finish = { v[n - 1].y, v[n - 1].x };
+	sort(v.begin(), v.end());
+
+	// dp 초기세팅 처음 start값 넣어줌
+	int i = 0;
+	while (v[i].y != start.y || v[i].x != start.x)++i;
+	answer ans;
+	ans.power = v[i].fly;
+	ans.v.push_back({ v[i].y, v[i].x });
+	dp.push_back(ans);
+	++i;
+	for (; i < n; ++i) {
+		int index = -1, maximum = -1;
+		for (int j = 0; j < dp.size(); ++j) {
+			pos p = dp[j].v[dp[j].v.size() - 1];
+			// 이전값들중 y축이 같은것들
+			if (v[i].y == p.y && v[i].x > p.x) {
+				if (dp[j].power - k > maximum) {
+					index = j;
+					maximum = dp[j].power - k;
+				}
+			}
+
+			// 이전값들중 x축이 같은 것들
+			if (v[i].x == p.x && v[i].y > p.y) {
+				if (dp[j].power - k > maximum) {
+					index = j;
+					maximum = dp[j].power - k;
+				}
+			}
+		}
+		
+		// dp를 통해 찾은 최대값을 넣어줌
+		if (index != -1) {
+			ans.v = dp[index].v;
+			ans.v.push_back({ v[i].y, v[i].x });
+			ans.power = maximum + v[i].fly;
+			dp.push_back(ans);
+			if (v[i].y == finish.y && v[i].x == finish.x)break;
+		}
+	}
+	ans = dp[dp.size() - 1];
+	cout << ans.power << "\n";
+	cout << ans.v.size() << "\n";
+	for (int i = 0; i < ans.v.size(); ++i)
+		cout << ans.v[i].x << " " << ans.v[i].y << "\n";
 	return 0;
 }
 */
