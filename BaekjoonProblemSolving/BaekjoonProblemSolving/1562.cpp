@@ -31,6 +31,13 @@ https://www.acmicpc.net/problem/1562
 */
 
 /*
+문제 자체는 되게 단순하다.
+현재 위치에서 좌, 우에 있는 계단수의 경우의 합을 더하면 된다..
+여기에 비트셋개념까지 들어가면서 골드로 평을 받는것같다.
+*/
+
+
+/*
 #include <iostream>
 #include <cstring>
 using namespace std;
