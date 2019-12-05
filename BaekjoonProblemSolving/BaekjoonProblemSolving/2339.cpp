@@ -96,8 +96,8 @@ int n, map[20][20];
 
 // 해당 영역에 먼지와 보석의 개수 및 먼지 위치 구하는 함수
 void get_info(pos start, pos end, slate& a) {
-	for (int i = start.y; i < end.y; ++i)
-		for (int j = start.x; j < end.x; ++j)
+	for (int i = start.y; i <= end.y; ++i)
+		for (int j = start.x; j <= end.x; ++j)
 			if (map[i][j] == DEBRIS)
 				a.debris.push_back({ i, j });
 			else if (map[i][j] == CRYSTAL)
@@ -106,15 +106,14 @@ void get_info(pos start, pos end, slate& a) {
 
 // 해당 라인으로 짤라도 되는지 확인 dir=false수직, true수평
 bool checkDiv(pos& start, pos& end, pos& p, bool dir) {
-	// 자르는 점이 모서리 부분인 경우 두개로 나누어 지지 않음
-	if (start.y == p.y || start.x == p.x || end.y == p.y || end.x == p.x)return false;
-
 	if (dir) {
-		for (int i = start.x; i < end.x; ++i)
+		if (p.y <= start.y || p.y >= end.y)return false;
+		for (int i = start.x; i <= end.x; ++i)
 			if (map[p.y][i] == CRYSTAL)return false;
 	}
 	else {
-		for (int i = start.y; i < end.y; ++i)
+		if (p.x <= start.x || p.x >= end.x)return false;
+		for (int i = start.y; i <= end.y; ++i)
 			if (map[i][p.x] == CRYSTAL)return false;
 	}
 	return true;
@@ -128,29 +127,23 @@ int divide_conquer(pos start, pos end, bool dir) {
 
 	// 석판엔 1개의 크리스탈과 0개의 부스러기만 남아있어야함
 	if (cur.crystal == 1 && cur.debris.size() == 0)return 1;
-	// 기저 조건 : 크리스탈이 0개일때
-	if (cur.crystal == 0)return 0;
-	// 기저 조건 : 부스러기가 0개일때
-	if (cur.debris.size() == 0)return 0;
+	// 기저 조건 : 크리스탈 또는 부스러기가 0개일때
+	if (cur.crystal == 0 || cur.debris.size() == 0)return 0;
 
 	int res = 0;
-	bool check[20] = {};
 	// 각 부스러기 별로 잘라봄
 	for (int i = 0; i < cur.debris.size(); ++i) {
 		// 이미 같은 위치에 같은 방향으로 자른 경우 pass
-		if (dir && check[cur.debris[i].y])continue;
-		if (!dir && check[cur.debris[i].x])continue;
+
 		// 이전에 잘린 방향과 반대 방향으로 자를 수 있는지 확인
 		if (checkDiv(start, end, cur.debris[i], dir)) {
 			// 가로
 			if (dir) {
-				check[cur.debris[i].y] = true;
-				res += divide_conquer(start, { cur.debris[i].y, end.x }, !dir) * divide_conquer({ cur.debris[i].y + 1, start.x }, end, !dir);
+				res += divide_conquer(start, { cur.debris[i].y - 1, end.x }, !dir) * divide_conquer({ cur.debris[i].y + 1, start.x }, end, !dir);
 			}
 			// 세로
 			else {
-				check[cur.debris[i].x] = true;
-				res += divide_conquer(start, { end.y, cur.debris[i].x }, !dir) * divide_conquer({ start.y, cur.debris[i].x + 1 }, end, !dir);
+				res += divide_conquer(start, { end.y, cur.debris[i].x - 1 }, !dir) * divide_conquer({ start.y, cur.debris[i].x + 1 }, end, !dir);
 			}
 		}
 	}
@@ -165,7 +158,7 @@ int main() {
 	for (int i = 0; i < n; ++i)
 		for (int j = 0; j < n; ++j)
 			cin >> map[i][j];
-	int res = divide_conquer({ 0, 0 }, { n, n }, true) + divide_conquer({ 0, 0 }, { n, n }, false);
+	int res = divide_conquer({ 0, 0 }, { n - 1, n - 1 }, true) + divide_conquer({ 0, 0 }, { n - 1, n - 1 }, false);
 	if (res == 0)res = -1;
 	cout << res << endl;
 	return 0;
