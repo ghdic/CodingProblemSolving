@@ -72,3 +72,87 @@ int main() {
 	return 0;
 }
 */
+
+/*
+
+c
+b
+a
+
+b
+a     c
+
+
+a  b  c
+
+   c 
+a  b
+
+   c
+   b  a
+
+c  b  a
+
+      b
+      a
+
+	  c
+	  b
+	  a
+
+모든 원판을 1 -> 3으로 옮기고 싶다
+n = 1
+1 -> 3
+
+n = 2
+1 -> 2
+
+1 -> 3
+
+2 -> 3
+
+n = 3
+1 -> 3
+1 -> 2
+3 -> 2
+1 -> 3 // 세번째꺼 목적지로
+
+2 -> 1
+2 -> 3 // 두번째꺼 목적지로
+1 -> 3 // 첫번째꺼 목적지로
+*/
+
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int n;
+
+void print(int from, int to) {
+	cout << from << " " << to << "\n";
+}
+
+void hanoi(int n, int from, int by, int to) {
+	// 기저 사례 : 한개일땐 목적지로 가면 끝!
+	if (n == 1)
+		print(from, to);
+	else {
+		// from으로부터 by로 맨 밑 원판 제외 옮겨줌
+		hanoi(n - 1, from, to, by);
+		// 맨밑을 from으로부터 to로 옮겨줌
+		print(from, to);
+		// by로 옮겼던 나머지 원판을 to로 옮겨줌
+		hanoi(n - 1, by, from, to);
+	}
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cout.tie(NULL);
+	cin >> n;
+	cout << (int)pow(2, n) - 1 << "\n";
+	hanoi(n, 1, 2, 3);
+	return 0;
+}
+*/

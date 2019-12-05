@@ -81,3 +81,32 @@ int main() {
 /*
 div & conquer 이미지 표현할때 처럼 n / 4 로 나누어 구역을 나누어줌
 */
+
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int n, r, c;
+
+int divide_conquer(int num, int y, int x) {
+	if (y == r && x == c)return 0;
+	int div = num / 2;
+	if (y + div > r) {
+		if (x + div > c) return divide_conquer(div, y, x);
+		else return div * div + divide_conquer(div, y, x + div);
+	}
+	else {
+		if (x + div > c)return 2 * div * div + divide_conquer(div, y + div, x);
+		else return 3 * div * div + divide_conquer(div, y + div, x + div);
+	}
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin >> n >> r >> c;
+	n = pow(2, n);
+	cout << divide_conquer(n, 0, 0) << endl;
+	return 0;
+}
+*/
