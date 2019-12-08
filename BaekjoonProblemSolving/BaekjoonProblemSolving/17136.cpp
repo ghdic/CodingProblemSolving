@@ -292,3 +292,74 @@ int main()
 	else cout << ans;
 }
 */
+
+/*
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int map[10][10];
+int paper[6] = { 0, 5, 5, 5, 5, 5 };
+int res = 1e9;
+
+void dfs(int y, int x, int cnt) {
+	// 기저 조건 : 결과보다 작으면 갱신할 가치가 없음
+	if (cnt > res)return;
+	// 81까지 끝까지 돌았으니 최솟값 갱신
+	if (y == 10) {
+		res = min(res, cnt);
+		return;
+	}
+	// x좌표 넘어가면 다음줄로 넘겨줌
+	if (x == 10) {
+		dfs(y + 1, 0, cnt);
+		return;
+	}
+	// 값 0이면 넘어감
+	if (map[y][x] == 0) {
+		dfs(y, x + 1, cnt);
+	}
+
+	// 크기 5~1까지 가능한 경우 재귀 돌려줌(큰거부터 해야 최솟값 갱신에 더 효율적
+	for (int sz = 5; sz >= 1; --sz) {
+		if (y + sz > 10 || x + sz > 10 || paper[sz] == 0)continue;
+
+		bool flag = true;
+
+		for (int i = y; i < y + sz; ++i) {
+			for (int j = x; j < x + sz; ++j)
+				if (map[i][j] == 0) {
+					flag = false;
+					break;
+				}
+			if (!flag)break;
+		}
+		if (!flag)continue;
+
+		for (int i = y; i < y + sz; ++i)
+			for (int j = x; j < x + sz; ++j)
+				map[i][j] = 0;
+		paper[sz]--;
+		dfs(y, x + sz, cnt + 1);
+
+		for (int i = y; i < y + sz; ++i)
+			for (int j = x; j < x + sz; ++j)
+				map[i][j] = 1;
+		paper[sz]++;
+	}
+}
+
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	for (int i = 0; i < 10; ++i)
+		for (int j = 0; j < 10; ++j)
+			cin >> map[i][j];
+	dfs(0, 0, 0);
+	if (res == 1e9)res = -1;
+	cout << res << endl;
+	return 0;
+}
+*/
