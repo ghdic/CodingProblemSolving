@@ -110,3 +110,33 @@ int main() {
 	return 0;
 }
 */
+
+/*
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	ios::sync_with_stdio(false);
+
+	long long n, attack;
+	long long cur = 0, mx = 0;
+	cin >> n >> attack;
+
+	while (n--) {
+		int t, a, h;
+		cin >> t >> a >> h;
+		if (t == 1) {
+			long long damage = a * (ceil((double)h / attack) - 1);
+			if (damage > cur)mx += damage - cur, cur = 0;
+			else cur -= damage;
+		}
+		else {
+			attack += a;
+			cur += h;
+			if (cur > mx)cur = mx;
+		}
+	}
+	cout << mx + 1 << endl;
+}
+*/
