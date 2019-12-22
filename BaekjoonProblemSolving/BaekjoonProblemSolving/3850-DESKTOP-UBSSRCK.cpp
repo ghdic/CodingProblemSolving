@@ -107,7 +107,7 @@ Impossible
 impossible의 경우는 어쩌지..??
 */
 
-/*
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -118,30 +118,29 @@ using namespace std;
 #define MAXN 21
 #define INF 1e9
 
-int dist[1 << MAXN]; // 해당 경우 방문확인 및 dp
-int pre[1 << MAXN]; // 이전 상태 저장
-int shoot[1 << MAXN]; // 총을 쏜 원숭이 저장
+int dist[1 << MAXN]; // 해당 경우의수 이미 탐색했는지 방문확인
+int pre[1 << MAXN]; // 이전 경우를 저장하여 백트래킹으로 출력용
+int shoot[1 << MAXN]; // 쏜 위치 저장
 int n, m;
-vector<int> adjacent[MAXN]; // 인접한 노드 저장
-int counter[MAXN]; // 카운터
+vector<int> adjacent[MAXN]; // 인접한 나무
+int counter[MAXN]; // 카운트 전용
 
 int bfs() {
-	int cur_state, next_state, i, j;
+	int cur_state, next_state, i;
 	queue<int> q;
-	memset(dist, -1, sizeof(dist)); // 해당 경우가 이미 있었는지 확인하기 위해 -1 초기화
-	dist[(1 << n) - 1] = 0; // 모든 나무에 원숭이가 있다는 가정하에서 start n=5일때 11111
+	memset(dist, -1, sizeof(dist));
+	dist[(1 << n) - 1] = 0;
 	q.push((1 << n) - 1);
 	while (!q.empty()) {
 		int p = q.front();
 		cur_state = 0;
 		q.pop();
 		memset(counter, 0, sizeof(counter));
-		// 살아있을 가능성이 있는 원숭이들이 다음에 있을 수 있는 위치
 		for (i = 0; i < n; ++i) {
-			if (p & (1 << i)) { // 해당 위치에 원숭이가 살아 있는가?
-				for (int next : adjacent[i]) { // 해당 원숭이가 갈 수 있는 곳 cur_state에 마킹
+			if (p & (1 << i)) {
+				for (int next : adjacent[i]) {
 					counter[next]++;
-					cur_state |= (1 << next); // 해당 비트 채워줌
+					cur_state |= (1 << next);
 				}
 			}
 		}
@@ -149,20 +148,22 @@ int bfs() {
 			if (p & (1 << i)) {
 				next_state = cur_state;
 				for (int next : adjacent[i]) {
-					if (counter[next] - 1 <= 0) // 해당 위치에 원숭이가 가는 경우가 한번 이하면
-						next_state &= ~(1 << next); // 해당 비트 지워줌, 방문 불가
+					if (counter[next] - 1 <= 0)
+						next_state &= ~(1 << next);
 				}
-				if (dist[next_state] == -1) { // 해당 경우가 처음이라면
-					dist[next_state] = dist[p] + 1; // 이전 경우에서 + 1
-					q.push(next_state); // 다음 상태 넣어줌
-					pre[next_state] = p; // 이전 경우 넣어줌
-					shoot[next_state] = i; // 어디를 쏘고있는지 저장
-					if (next_state == 0)return dist[next_state]; // 모든 원숭이가 죽었다면 finish
+				if (dist[next_state] == -1) {
+					dist[next_state] = dist[p] + 1;
+					q.push(next_state);
+					pre[next_state] = p;
+					shoot[next_state] = i;
+					if (next_state == 0)return dist[next_state];
 				}
 			}
 		}
+		
+		
 	}
-	return INF; // 원숭이를 모두 죽이지 못한채 queue가 비었다면 실패
+	return INF;
 }
 
 
@@ -202,4 +203,3 @@ int main() {
 	}
 	return 0;
 }
-*/
