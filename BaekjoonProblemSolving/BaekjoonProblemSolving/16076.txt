@@ -1,0 +1,22 @@
+/*
+https://www.acmicpc.net/problem/16076
+
+&Title
+16076번 - 휴식이 필요해
+
+&Question
+이 문제에 제출을 하면, 24시간 동안 모든 문제에 
+제출을 할 수 없다.제출을 하고 휴식을 취하러 가자. 
+
+&Input
+
+
+&Output
+
+
+&Example
+
+*/
+
+
+1
