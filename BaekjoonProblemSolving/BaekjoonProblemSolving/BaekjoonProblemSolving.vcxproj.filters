@@ -32,7 +32,10 @@
     <ClCompile Include="14652.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="13277.py">
+    <ClCompile Include="1916.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5719.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
