@@ -155,3 +155,142 @@ DBEGFCA
 //
 //	return 0;
 //}
+
+
+/*
+#include <iostream>
+using namespace std;
+
+struct node {
+	char value;
+	node* left;
+	node* right;
+
+	node(char key) : value(key) {
+		left = right = NULL;
+	}
+};
+
+class BinaryTree {
+public:
+	BinaryTree();
+	~BinaryTree();
+
+	void insert(char a, char b, char c); // 올바른 위치에 노드를 생성해 key를 집어넣는다.
+	node* find(char key); // 해당 key를 가진 노드가 있는지 찾고 있으면 해당 노드를, 없으면 null을 반환한다.
+	void preorder_print(); // 전위순회
+	void inorder_print(); // 중위순회
+	void postorder_print(); // 후위순회
+
+private:
+	node* root;
+
+	void destroy_tree(node* leaf); // 순회하며 할당된 노드들을 삭제한다.
+	void insert(char a, char b, char c, node* leaf);
+	node* find(char key, node* leaf);
+	void preorder_print(node* leaf); // root -> left -> right
+	void inorder_print(node* leaf); // left -> root -> right
+	void postorder_print(node* leaf); // left -> right -> root
+
+};
+
+BinaryTree::BinaryTree() {
+	root = NULL;
+}
+
+BinaryTree::~BinaryTree() {
+	destroy_tree(root);
+}
+
+void BinaryTree::destroy_tree(node* leaf) {
+	if (leaf != NULL) {
+		destroy_tree(leaf->left);
+		destroy_tree(leaf->right);
+		delete leaf;
+	}
+}
+
+void BinaryTree::insert(char a, char b, char c) {
+	if (root) insert(a, b, c, root);
+	else {
+		root = new node(a);
+		root->left = (b == '.' ? NULL : new node(b));
+		root->right = (c == '.' ? NULL : new node(c));
+	}
+}
+
+void BinaryTree::insert(char a, char b, char c, node* leaf) {
+	node* temp = find(a);
+	temp->left = (b == '.' ? NULL : new node(b));
+	temp->right = (c == '.' ? NULL : new node(c));
+}
+
+node* BinaryTree::find(char key) {
+	return find(key, root);
+}
+
+node* BinaryTree::find(char key, node* leaf) {
+	if (leaf == NULL)return NULL;
+	if (leaf->value == key)return leaf;
+	node* temp;
+	temp = find(key, leaf->left);
+	if (temp)return temp;
+	temp = find(key, leaf->right);
+	if (temp)return temp;
+	return NULL;
+}
+
+void BinaryTree::preorder_print() {
+	preorder_print(root);
+	cout << '\n';
+}
+
+void BinaryTree::preorder_print(node* leaf) {
+	if (leaf == NULL)return;
+	cout << leaf->value;
+	preorder_print(leaf->left);
+	preorder_print(leaf->right);
+}
+
+void BinaryTree::inorder_print() {
+	inorder_print(root);
+	cout << '\n';
+}
+
+void BinaryTree::inorder_print(node* leaf) {
+	if (leaf == NULL)return;
+	inorder_print(leaf->left);
+	cout << leaf->value;
+	inorder_print(leaf->right);
+}
+
+void BinaryTree::postorder_print() {
+	postorder_print(root);
+	cout << '\n';
+}
+
+void BinaryTree::postorder_print(node* leaf) {
+	if (leaf == NULL)return;
+	postorder_print(leaf->left);
+	postorder_print(leaf->right);
+	cout << leaf->value;
+}
+
+int n;
+
+int main() {
+	ios::sync_with_stdio(false);
+	BinaryTree* tree = new BinaryTree();
+	char a, b, c;
+	cin >> n;
+	for (int i = 0; i < n; ++i) {
+		cin >> a >> b >> c;
+		tree->insert(a, b, c);
+	}
+	tree->preorder_print();
+	tree->inorder_print();
+	tree->postorder_print();
+
+	return 0;
+}
+*/
