@@ -38,7 +38,6 @@ B-A = { 3, 5, 6 } 이므로, 대칭
 */
 
 /*
-// 이거 왜 안됌? 교집합 구하고 한건데
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -60,6 +59,8 @@ int main() {
 	for (int i = 0; i < m; ++i) {
 		cin >> b[i];
 	}
+	sort(a.begin(), a.end());
+	sort(b.begin(), b.end());
 	c.erase(set_intersection(a.begin(), a.end(), b.begin(), b.end(), c.begin()), c.end());
 
 	cout << n + m - c.size() * 2 << endl;
