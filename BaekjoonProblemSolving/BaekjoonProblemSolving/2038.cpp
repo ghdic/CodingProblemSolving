@@ -65,9 +65,8 @@ unordered_map<long long, long long> um;
 int main() {
 	ios::sync_with_stdio(false);
 	cin >> n;
-	um[1] = 1;
 	long long sum = 1;
-	for (int i = 2; i <= n; ++i) {
+	for (int i = 1; i <= n; ++i) {
 		um[i] = 1 + um[i - um[um[i - 1]]];
 		sum += um[i];
 
