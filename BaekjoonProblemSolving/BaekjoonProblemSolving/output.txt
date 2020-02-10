@@ -1,0 +1,10 @@
+Case #1: possible
+Case #2: possible
+Case #3: possible
+Case #4: possible
+Case #5: possible
+Case #6: possible
+Case #7: possible
+Case #8: possible
+Case #9: not possible
+Case #10: possible
