@@ -35,39 +35,28 @@ aba
 */
 
 /*
-#define _CRT_SECURE_NO_WARNINGS
-#include <cstdio>
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	string s1, s2;
 	getline(cin, s1);
-	cin >> s2;
-	int j = 0, count = 0;
-	for (int i = 0; i < s1.size(); i++) {
-		if (j == s2.size()) {
-			count++;
-			j = 0;
-		}
-		if (s1[i] == s2[j]) {
-			j++;
-		}
-		else {
-			i -= j;
-			j = 0;
+	getline(cin, s2);
+	if (s1.size() < s2.size()) {
+		cout << 0 << endl;
+		return 0;
+	}
+	int res = 0;
+	for (int i = 0; i < s1.size() - s2.size() + 1; ++i) {
+		if (s1.substr(i, s2.size()) == s2) {
+			++res;
+			i += s2.size() - 1;
 		}
 	}
-	if (j == s2.size()) {
-		count++;
-		j = 0;
-	}
-	printf("%d\n", count);
+	cout << res << endl;
 	return 0;
 }
-*/
-
-/*
-그냥 풀면됨..
 */

@@ -46,40 +46,48 @@ O로 표시된 칸에 있는 다른 말을 잡을 수 있다.그런데
 
 */
 
-
+/*
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
-int n, last, res = 0;
-int map[10][10], diag[20][2];
+int n, res = 0;
+int map[11][11], diag[21][2];
 
-void backtrack(int pos, int choice) {
-	if (pos == last) {
+void backtrack(int y, int x, int choice, bool check) {
+	if (y >= n) {
 		res = max(res, choice);
 		return;
 	}
-	int y = pos / n, x = pos % n;
-	// 고르지 않는 경우
-	backtrack(pos + 1, choice);
-	if (map[y][x] == 1 && diag[x + y][0] == 0 && diag[n + x - y][1] == 0) {
-		// 고르는 경우
-		++diag[x + y][0]; ++diag[n + x - y][1];
-		backtrack(pos + 1, choice + 1);
-		--diag[x + y][0]; --diag[n + x - y][1];
+	int ty = y, tx = x + 2;
+	if (tx >= n) {
+		ty += 1;
+		tx = !(check ^ (ty & 1)) ? 1 : 0;
 	}
+	
+	if (map[y][x] == 1 && diag[x + y][0] == 0 && diag[10 + y - x][1] == 0) {
+		// 고르는 경우
+		++diag[x + y][0]; ++diag[10 + y - x][1];
+		backtrack(ty, tx, choice + 1, check);
+		--diag[x + y][0]; --diag[10 + y - x][1];
+	}
+	// 고르지 않는 경우
+	backtrack(ty, tx, choice, check);
 }
 
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cin >> n;
-	last = n * n;
 	for (int i = 0; i < n; ++i)
 		for (int j = 0; j < n; ++j)
 			cin >> map[i][j];
-	backtrack(0, 0);
-
-	cout << res << endl;
+	int a, b;
+	backtrack(0, 0, 0, true);
+	a = res; res = 0;
+	backtrack(0, 1, 0, false);
+	b = res;
+	cout << a + b << endl;
 	return 0;
 }
+*/
