@@ -50,11 +50,201 @@ DA, DB ≤ 1,000)가 주어진다. 풍선이 부족한 경우는 없다.
 
 */
 
-
+// 자손님 블로그거 따라쳐봤는데 이 방식도 공부해야 될듯..
+/*
 #include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include <cstring>
 using namespace std;
+const int INF = 1e9;
+
+struct MCMF {
+	struct edge {
+		int v, cost, cap, rev;
+		edge(int v, int cost, int cap, int rev)
+			:v(v), cost(cost), cap(cap), rev(rev) {};
+	};
+	int n;
+	vector<vector<edge>> vt;
+	vector<int> pv, pe;
+	MCMF(int n) : n(n) {
+		pv.assign(n + 1, -1);
+		pe.assign(n + 1, -1);
+		vt.resize(n + 1);
+	}
+
+	void addEdge(int s, int e, int cost, int cap) {
+		vt[s].emplace_back(e, cost, cap, vt[e].size());
+		vt[e].emplace_back(s, -cost, 0, vt[s].size() - 1);
+	}
+
+	bool spfa(int src, int sink) {
+		vector<int> v(n + 1, 0);
+		vector<int> dist(n + 1, INF);
+		queue<int> q;
+		q.push(src);
+		dist[src] = 0;
+		v[src] = 1;
+		while (!q.empty()) {
+			int cur = q.front(); q.pop();
+			v[cur] = 0;
+			for(int i = 0; i < vt[cur].size(); ++i){
+				int next = vt[cur][i].v;
+				int cap = vt[cur][i].cap;
+				int cost = vt[cur][i].cost;
+				if (cap && dist[next] > dist[cur] + cost) {
+					dist[next] = dist[cur] + cost;
+					pv[next] = cur;
+					pe[next] = i;
+					if (!v[next]) {
+						v[next] = 1;
+						q.push(next);
+					}
+				}
+			}
+		}
+		return dist[sink] != INF;
+	}
+
+	int solve(int src, int sink) {
+		int flow = 0, cost = 0;
+		while (spfa(src, sink)) {
+			int minFlow = INF;
+			for (int i = sink; i != src; i = pv[i]) {
+				int prev = pv[i];
+				int idx = pe[i];
+				minFlow = min(minFlow, vt[prev][idx].cap);
+			}
+			for (int i = sink; i != src; i = pv[i]) {
+				int prev = pv[i];
+				int idx = pe[i];
+				vt[prev][idx].cap -= minFlow;
+				vt[i][vt[prev][idx].rev].cap += minFlow;
+				cost += vt[prev][idx].cost * minFlow;
+			}
+		}
+		return cost;
+	}
+};
+
+int n, a, b, x, y, z;
 
 int main() {
 	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	while (cin >> n >> a >> b) {
+		if (n == 0 && a == 0 && b == 0)
+			break;
+		MCMF mcmf(n + 4);
+		mcmf.addEdge(n + 1, n + 2, 0, a);
+		mcmf.addEdge(n + 1, n + 3, 0, b);
+		for (int i = 1; i <= n; ++i) {
+			cin >> x >> y >> z;
+			mcmf.addEdge(n + 2, i, y, INF);
+			mcmf.addEdge(n + 3, i, z, INF);
+			mcmf.addEdge(i, n + 4, 0, x);
+		}
+		cout << mcmf.solve(n + 1, n + 4) << "\n";
+	}
 	return 0;
 }
+*/
+
+// 이 방식으론 시간 초과난당..
+/*
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+const int MAXN = 1004;
+
+int n, cap[MAXN][MAXN], flow[MAXN][MAXN], path[MAXN], d[MAXN][MAXN], dist[MAXN];
+vector<int> adj[MAXN];
+bool inQ[MAXN];
+int s = 0, e = 1003, room1 = 1001, room2 = 1002;
+
+void connect(int u, int v, int cost, int interval) {
+	cap[u][v] = cost;
+	d[u][v] = interval;
+	d[v][u] = -interval;
+	adj[u].push_back(v);
+	adj[v].push_back(u);
+}
+
+void clear() {
+	memset(cap, 0, sizeof(cap));
+	memset(flow, 0, sizeof(flow));
+	memset(d, 0, sizeof(d));
+	for (int i = 0; i < MAXN; ++i)adj[i].clear();
+}
+
+bool input() {
+	int a, b, c;
+	cin >> n >> a >> b;
+	if (n == 0 && a == 0 && b == 0)
+		return false;
+	connect(room1, e, a, 0);
+	connect(room2, e, b, 0);
+	for (int i = 1; i <= n; ++i) {
+		cin >> a >> b >> c;
+		connect(i, room1, a, b);
+		connect(i, room2, a, c);
+		connect(s, i, a, 0);
+	}
+	return true;
+}
+
+int mcmf() {
+	int res = 0;
+	while (true) {
+		memset(path, -1, sizeof(path));
+		memset(dist, 0x3f, sizeof(dist));
+		memset(inQ, false, sizeof(inQ));
+		queue<int> q;
+		q.push(s);
+		dist[s] = 0;
+		inQ[s] = true;
+		while (!q.empty()) {
+			int cur = q.front(); q.pop();
+			inQ[cur] = false;
+			for (int next : adj[cur]) {
+				if (cap[cur][next] - flow[cur][next] > 0 &&
+					dist[next] > dist[cur] + d[cur][next]) {
+					dist[next] = dist[cur] + d[cur][next];
+					path[next] = cur;
+					if (!inQ[next]) {
+						q.push(next);
+						inQ[next] = true;
+					}
+				}
+			}
+		}
+		if (path[e] == -1)break;
+
+		int f = 1e9;
+		for (int i = e; i != s; i = path[i])
+			f = min(f, cap[path[i]][i] - flow[path[i]][i]);
+		for (int i = e; i != s; i = path[i]) {
+			flow[path[i]][i] += f;
+			flow[i][path[i]] -= f;
+			res += f * d[path[i]][i];
+		}
+	}
+	return res;
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	
+	while (input()) {
+		cout << mcmf() << "\n";
+		clear();
+	}
+	return 0;
+}
+*/
