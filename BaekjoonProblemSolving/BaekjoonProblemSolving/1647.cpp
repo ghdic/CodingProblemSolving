@@ -104,5 +104,5 @@ int main() {
 	}
 	cout << prim(1) - mx << endl;
 	return 0;
-}
+}A
 */
