@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="11405.cpp" />
+    <ClCompile Include="11406.cpp" />
     <ClCompile Include="11408.cpp" />
     <ClCompile Include="11409.cpp" />
     <ClCompile Include="1197.cpp" />
