@@ -61,7 +61,9 @@ T가 주어지고, 다섯째 줄에는 벌금의 최댓값 F가 주어진다. T�
 
 */
 
+// 시간이 적을때 벌금인데 초과일때 벌금으로 잘못 이해함 ㅋㅋ
 
+/*
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -214,7 +216,7 @@ int main() {
 		for (int j = 1; j <= n; ++j) {
 			int weight = out[j] - in[i];
 			if (weight < 1)continue;
-			weight = weight > t ? (weight - t) * (weight - t) : 0;
+			weight = weight < t ? (weight - t) * (weight - t) : 0;
 			weight = weight > f ? f : weight;
 			mcmf.addEdge(i, j + 50, 1, weight);
 		}
@@ -228,3 +230,4 @@ int main() {
 		cout << -1 << endl;
 	return 0;
 }
+*/

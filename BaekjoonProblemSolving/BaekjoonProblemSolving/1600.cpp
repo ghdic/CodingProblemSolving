@@ -50,6 +50,7 @@ W개의 숫자가 주어지는데, 0은 아무것도 없는 평지, 1은 장애�
 
 */
 
+
 /*
 #include <iostream>
 #include <queue>
@@ -75,7 +76,7 @@ bool outOfRange(int y, int x) {
 
 int bfs() {
 	int cury = 0, curx = 0, endy = h - 1, endx = w - 1, res = 0;
-	
+	if(w == 1 && h == 1)return 0;
 	q.push({ cury, curx, 0 });
 	check[cury][curx][0] = true;
 	while (!q.empty()) {
@@ -122,4 +123,5 @@ int main() {
 	cout << bfs() << endl;
 	return 0;
 }
+
 */
