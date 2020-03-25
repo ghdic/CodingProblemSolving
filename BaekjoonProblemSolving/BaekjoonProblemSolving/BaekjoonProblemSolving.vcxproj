@@ -152,6 +152,7 @@
     <ClCompile Include="11409.cpp" />
     <ClCompile Include="1197.cpp" />
     <ClCompile Include="1258.cpp" />
+    <ClCompile Include="1507.cpp" />
     <ClCompile Include="1543.cpp" />
     <ClCompile Include="1585.cpp" />
     <ClCompile Include="1600.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="2309.cpp" />
     <ClCompile Include="2311.cpp" />
     <ClCompile Include="2316.cpp" />
+    <ClCompile Include="2665.cpp" />
     <ClCompile Include="4716.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
