@@ -192,7 +192,8 @@ N(2 ≤ N ≤ 50)과 M(2 ≤ M ≤
 
 */
 
-
+/*
+// visited < t 로직하니깐 같은게 여러번 들어가면서 큐가 배로 들어나며 시간초과남 =-=
 #include <iostream>
 #include <queue>
 #include <vector>
@@ -221,12 +222,14 @@ int bfs() {
 		if (choice[i] == GREEN) {
 			q.push({ v[i].y, v[i].x, GREEN });
 			tmap[v[i].y][v[i].x] |= GREEN;
+			visit[v[i].y][v[i].x] = t;
 		}
 		else if (choice[i] == RED) {
 			q.push({ v[i].y, v[i].x, RED });
 			tmap[v[i].y][v[i].x] |= RED;
+			visit[v[i].y][v[i].x] = t;
 		}
-		visit[v[i].y][v[i].x] = t;
+		
 	}
 
 	while (q.size()) {
@@ -240,6 +243,7 @@ int bfs() {
 				if (ty < 0 || ty >= n || tx < 0 || tx >= m)continue;
 				if (tmap[ty][tx] == LAKE)continue;
 				if (visit[ty][tx] < t)continue; // 이미 이전 시간에 들렀던 곳이면 계속
+				if (tmap[ty][tx] & p.c)continue;
 				visit[ty][tx] = t;
 				tmap[ty][tx] |= p.c; // 동시에 초빨 들어오는지 or비트연산자로 확인
 				q.push({ ty, tx, p.c });
@@ -295,3 +299,4 @@ int main() {
 	cout << run() << endl;
 	return 0;
 }
+*/

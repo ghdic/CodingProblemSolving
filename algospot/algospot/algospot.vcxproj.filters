@@ -25,6 +25,9 @@
     <Filter Include="Source Files\CH.09 동적 계획법 테크닉">
       <UniqueIdentifier>{db2228d3-2f77-4472-866e-f496d0b28c83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.16 비트 마스킹">
+      <UniqueIdentifier>{c7d35e0c-0747-4e19-b09f-8aab92210663}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -90,17 +93,20 @@
     <ClCompile Include="8장 동적 계획법\TRIPATHCNT.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
-    <ClCompile Include="9장 동적 계획법 테크닉\여행 짐 싸기.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NUMB3RS.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
     <ClCompile Include="8장 동적 계획법\POLY.cpp">
       <Filter>Source Files\CH.08 동적 계획법</Filter>
     </ClCompile>
+    <ClCompile Include="9장 동적 계획법 테크닉\여행 짐 싸기.cpp">
+      <Filter>Source Files\CH.09 동적 계획법 테크닉</Filter>
+    </ClCompile>
     <ClCompile Include="9장 동적 계획법 테크닉\광학 문자 인식.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CH.09 동적 계획법 테크닉</Filter>
+    </ClCompile>
+    <ClCompile Include="16장 비트마스크\GRADUATION.cpp">
+      <Filter>Source Files\CH.16 비트 마스킹</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
