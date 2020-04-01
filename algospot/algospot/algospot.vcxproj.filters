@@ -28,6 +28,9 @@
     <Filter Include="Source Files\CH.16 비트 마스킹">
       <UniqueIdentifier>{c7d35e0c-0747-4e19-b09f-8aab92210663}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.17 부분합">
+      <UniqueIdentifier>{741c78b5-0f87-405f-ae2e-e4fff000f359}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -107,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="16장 비트마스크\GRADUATION.cpp">
       <Filter>Source Files\CH.16 비트 마스킹</Filter>
+    </ClCompile>
+    <ClCompile Include="17장 부분합\CHRISTMAS.cpp">
+      <Filter>Source Files\CH.17 부분합</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
