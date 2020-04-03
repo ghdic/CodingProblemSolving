@@ -31,6 +31,9 @@
     <Filter Include="Source Files\CH.17 부분합">
       <UniqueIdentifier>{741c78b5-0f87-405f-ae2e-e4fff000f359}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.18 선형자료구조">
+      <UniqueIdentifier>{0b422d66-2e76-4819-8ab4-bd470d0f2095}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -113,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="17장 부분합\CHRISTMAS.cpp">
       <Filter>Source Files\CH.17 부분합</Filter>
+    </ClCompile>
+    <ClCompile Include="18장 선형자료구조\JOSEPHUS.cpp">
+      <Filter>Source Files\CH.18 선형자료구조</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
