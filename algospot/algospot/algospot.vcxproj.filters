@@ -34,6 +34,12 @@
     <Filter Include="Source Files\CH.18 선형자료구조">
       <UniqueIdentifier>{0b422d66-2e76-4819-8ab4-bd470d0f2095}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.19 큐와스택데크">
+      <UniqueIdentifier>{251be962-3b2d-42b6-a9b1-11faeb172985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CH.20 문자열">
+      <UniqueIdentifier>{01bc4f79-dc3d-4be8-ae2b-e71a08e4ebb7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -119,6 +125,15 @@
     </ClCompile>
     <ClCompile Include="18장 선형자료구조\JOSEPHUS.cpp">
       <Filter>Source Files\CH.18 선형자료구조</Filter>
+    </ClCompile>
+    <ClCompile Include="19장 큐와스택데크\BRACKETS2.cpp">
+      <Filter>Source Files\CH.19 큐와스택데크</Filter>
+    </ClCompile>
+    <ClCompile Include="19장 큐와스택데크\ITES.cpp">
+      <Filter>Source Files\CH.19 큐와스택데크</Filter>
+    </ClCompile>
+    <ClCompile Include="20장 문자열\NAMING.cpp">
+      <Filter>Source Files\CH.20 문자열</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
