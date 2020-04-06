@@ -138,6 +138,9 @@
     <ClCompile Include="20장 문자열\PALINDROMIZE.cpp">
       <Filter>Source Files\CH.20 문자열</Filter>
     </ClCompile>
+    <ClCompile Include="20장 문자열\JAEHASAFE.cpp">
+      <Filter>Source Files\CH.20 문자열</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="9장 동적 계획법 테크닉\문제목록.txt">

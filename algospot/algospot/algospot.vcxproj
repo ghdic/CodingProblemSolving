@@ -144,6 +144,7 @@
     <ClCompile Include="18장 선형자료구조\JOSEPHUS.cpp" />
     <ClCompile Include="19장 큐와스택데크\BRACKETS2.cpp" />
     <ClCompile Include="19장 큐와스택데크\ITES.cpp" />
+    <ClCompile Include="20장 문자열\JAEHASAFE.cpp" />
     <ClCompile Include="20장 문자열\NAMING.cpp" />
     <ClCompile Include="20장 문자열\PALINDROMIZE.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
