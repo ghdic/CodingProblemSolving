@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -148,6 +148,7 @@
     <ClCompile Include="20장 문자열\JAEHASAFE.cpp" />
     <ClCompile Include="20장 문자열\NAMING.cpp" />
     <ClCompile Include="20장 문자열\PALINDROMIZE.cpp" />
+    <ClCompile Include="21장 트리\TRAVERSAL.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\소풍.cpp" />
