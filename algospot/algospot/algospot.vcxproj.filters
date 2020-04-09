@@ -40,6 +40,9 @@
     <Filter Include="Source Files\CH.20 문자열">
       <UniqueIdentifier>{01bc4f79-dc3d-4be8-ae2b-e71a08e4ebb7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH..21 트리">
+      <UniqueIdentifier>{d47b3f19-a0fe-49dd-9bba-de4b6d120248}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -143,6 +146,12 @@
     </ClCompile>
     <ClCompile Include="20장 문자열\HABIT.cpp">
       <Filter>Source Files\CH.20 문자열</Filter>
+    </ClCompile>
+    <ClCompile Include="21장 트리\TRAVERSAL.cpp">
+      <Filter>Source Files\CH..21 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="21장 트리\FORTRESS.cpp">
+      <Filter>Source Files\CH..21 트리</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
