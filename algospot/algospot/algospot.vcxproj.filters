@@ -40,7 +40,10 @@
     <Filter Include="Source Files\CH.20 문자열">
       <UniqueIdentifier>{01bc4f79-dc3d-4be8-ae2b-e71a08e4ebb7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\CH..21 트리">
+    <Filter Include="Source Files\CH.22 이진검색트리">
+      <UniqueIdentifier>{783cff43-f361-44e6-85e1-8fcf09a31ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CH.21 트리">
       <UniqueIdentifier>{d47b3f19-a0fe-49dd-9bba-de4b6d120248}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -148,10 +151,13 @@
       <Filter>Source Files\CH.20 문자열</Filter>
     </ClCompile>
     <ClCompile Include="21장 트리\TRAVERSAL.cpp">
-      <Filter>Source Files\CH..21 트리</Filter>
+      <Filter>Source Files\CH.21 트리</Filter>
     </ClCompile>
     <ClCompile Include="21장 트리\FORTRESS.cpp">
-      <Filter>Source Files\CH..21 트리</Filter>
+      <Filter>Source Files\CH.21 트리</Filter>
+    </ClCompile>
+    <ClCompile Include="22장 이진검색트리\NERD2.cpp">
+      <Filter>Source Files\CH.22 이진검색트리</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -150,6 +150,7 @@
     <ClCompile Include="20장 문자열\PALINDROMIZE.cpp" />
     <ClCompile Include="21장 트리\FORTRESS.cpp" />
     <ClCompile Include="21장 트리\TRAVERSAL.cpp" />
+    <ClCompile Include="22장 이진검색트리\NERD2.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\소풍.cpp" />
