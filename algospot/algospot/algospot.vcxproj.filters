@@ -46,6 +46,9 @@
     <Filter Include="Source Files\CH.21 트리">
       <UniqueIdentifier>{d47b3f19-a0fe-49dd-9bba-de4b6d120248}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.10 탐욕법">
+      <UniqueIdentifier>{8a010cc4-1c71-46f3-82fc-33559f5bc6d2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -158,6 +161,9 @@
     </ClCompile>
     <ClCompile Include="22장 이진검색트리\NERD2.cpp">
       <Filter>Source Files\CH.22 이진검색트리</Filter>
+    </ClCompile>
+    <ClCompile Include="10장 탐욕법\MATCHORDER.cpp">
+      <Filter>Source Files\CH.10 탐욕법</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

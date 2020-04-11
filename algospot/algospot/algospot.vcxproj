@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10장 탐욕법\MATCHORDER.cpp" />
     <ClCompile Include="16장 비트마스크\GRADUATION.cpp" />
     <ClCompile Include="17장 부분합\CHRISTMAS.cpp" />
     <ClCompile Include="18장 선형자료구조\JOSEPHUS.cpp" />
