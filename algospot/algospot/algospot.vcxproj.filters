@@ -165,6 +165,9 @@
     <ClCompile Include="10장 탐욕법\MATCHORDER.cpp">
       <Filter>Source Files\CH.10 탐욕법</Filter>
     </ClCompile>
+    <ClCompile Include="22장 이진검색트리\INSERTION.cpp">
+      <Filter>Source Files\CH.22 이진검색트리</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="9장 동적 계획법 테크닉\문제목록.txt">
