@@ -23,7 +23,7 @@
     <ProjectGuid>{11F20875-F387-4610-8C4F-2C3508072CF7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>algospot</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -153,6 +153,7 @@
     <ClCompile Include="21장 트리\TRAVERSAL.cpp" />
     <ClCompile Include="22장 이진검색트리\INSERTION.cpp" />
     <ClCompile Include="22장 이진검색트리\NERD2.cpp" />
+    <ClCompile Include="23장 우선순위 큐와 힙\RUNNINGMEDIAN.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\소풍.cpp" />

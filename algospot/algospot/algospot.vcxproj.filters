@@ -49,6 +49,9 @@
     <Filter Include="Source Files\CH.10 탐욕법">
       <UniqueIdentifier>{8a010cc4-1c71-46f3-82fc-33559f5bc6d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.23 우선순위 큐와 힙">
+      <UniqueIdentifier>{bea8a28f-ffb5-4b2a-a8dd-5321e7fc0e59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -167,6 +170,9 @@
     </ClCompile>
     <ClCompile Include="22장 이진검색트리\INSERTION.cpp">
       <Filter>Source Files\CH.22 이진검색트리</Filter>
+    </ClCompile>
+    <ClCompile Include="23장 우선순위 큐와 힙\RUNNINGMEDIAN.cpp">
+      <Filter>Source Files\CH.23 우선순위 큐와 힙</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
