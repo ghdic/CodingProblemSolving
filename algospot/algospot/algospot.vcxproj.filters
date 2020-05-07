@@ -52,6 +52,9 @@
     <Filter Include="Source Files\CH.23 우선순위 큐와 힙">
       <UniqueIdentifier>{bea8a28f-ffb5-4b2a-a8dd-5321e7fc0e59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\CH.24 구간트리">
+      <UniqueIdentifier>{4ef12f88-7173-4205-b5a7-041b7c056cfb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp">
@@ -173,6 +176,9 @@
     </ClCompile>
     <ClCompile Include="23장 우선순위 큐와 힙\RUNNINGMEDIAN.cpp">
       <Filter>Source Files\CH.23 우선순위 큐와 힙</Filter>
+    </ClCompile>
+    <ClCompile Include="24장 구간 트리\MORDOR.cpp">
+      <Filter>Source Files\CH.24 구간트리</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
