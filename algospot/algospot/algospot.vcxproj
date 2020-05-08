@@ -154,6 +154,7 @@
     <ClCompile Include="22장 이진검색트리\INSERTION.cpp" />
     <ClCompile Include="22장 이진검색트리\NERD2.cpp" />
     <ClCompile Include="23장 우선순위 큐와 힙\RUNNINGMEDIAN.cpp" />
+    <ClCompile Include="24장 구간 트리\FAMILYTREE.cpp" />
     <ClCompile Include="24장 구간 트리\MORDOR.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\게임판 덮기.cpp" />
     <ClCompile Include="6장 무식하게 풀기(brute force)\보글 게임.cpp" />
