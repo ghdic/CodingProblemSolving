@@ -143,3 +143,74 @@ int main() {
 	return 0;
 }
 */
+
+/*
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+#define BLANK '.'
+#define WALL '#'
+#define START 'S'
+#define FINISH 'E'
+#define MAX 1e9
+
+struct pos {
+	int z, y, x;
+	pos(int _z = 0, int _y = 0, int _x = 0) :z(_z), y(_y), x(_x) {};
+};
+
+int l, r, c;
+string map[31][31];
+bool visited[31][31][31];
+pos start, finish;
+int dy[6] = { -1, 0, 1, 0, 0, 0 }, dx[6] = { 0, 1, 0, -1, 0, 0 }, dz[6] = { 0, 0, 0, 0, -1, 1 };
+int res;
+
+void dfs(int z, int y, int x, int cnt) {
+	visited[z][y][x] = true;
+	if (res < cnt)return;
+	if (z == finish.z && y == finish.y && z == finish.z) {
+		res = min(res, cnt);
+		return;
+	}
+	for (int i = 0; i < 6; ++i) {
+		int tz = z + dz[i], ty = y + dy[i], tx = x + dx[i];
+		if (tz < 0 || tz >= l || ty < 0 || ty >= r || tx < 0 || tx >= c)continue;
+		if (visited[tz][ty][tx])continue;
+		if (map[tz][ty][tx] == WALL)continue;
+		dfs(tz, ty, tx, cnt + 1);
+	}
+	visited[z][y][x] = false;
+}
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+	while (true) {
+		cin >> l >> r >> c;
+		if (l == 0 && r == 0 && c == 0)break;
+		fill(&visited[0][0][0], &visited[29][30][30], false);
+		res = MAX;
+		for (int i = 0; i < l; ++i)
+			for (int j = 0; j < r; ++j) {
+				cin >> map[i][j];
+				for (int k = 0; k < c; ++k)
+					if (map[i][j][k] == START)
+						start = { i, j, k };
+					else if (map[i][j][k] == FINISH)
+						finish = { i, j, k };
+			}
+		dfs(start.z, start.y, start.x, 0);
+		if (res == MAX) {
+			cout << "Trapped!\n";
+		}
+		else {
+			cout << "Escaped in " << res << " minute(s).\n";
+		}
+	}
+	return 0;
+}
+*/
