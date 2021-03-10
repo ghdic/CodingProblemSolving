@@ -144,45 +144,6 @@
     <Text Include="input.txt" />
     <Text Include="output.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="11111.cpp" />
-    <ClCompile Include="11405.cpp" />
-    <ClCompile Include="11406.cpp" />
-    <ClCompile Include="11407.cpp" />
-    <ClCompile Include="11408.cpp" />
-    <ClCompile Include="11409.cpp" />
-    <ClCompile Include="1197.cpp" />
-    <ClCompile Include="1258.cpp" />
-    <ClCompile Include="14424.cpp" />
-    <ClCompile Include="14659.cpp" />
-    <ClCompile Include="1507.cpp" />
-    <ClCompile Include="1543.cpp" />
-    <ClCompile Include="15658.cpp" />
-    <ClCompile Include="15659.cpp" />
-    <ClCompile Include="1585.cpp" />
-    <ClCompile Include="1600.cpp" />
-    <ClCompile Include="1647.cpp" />
-    <ClCompile Include="1657.cpp" />
-    <ClCompile Include="17090.cpp" />
-    <ClCompile Include="17506.cpp" />
-    <ClCompile Include="17836.cpp" />
-    <ClCompile Include="18808.cpp" />
-    <ClCompile Include="18809.cpp" />
-    <ClCompile Include="1922.cpp" />
-    <ClCompile Include="1963.cpp" />
-    <ClCompile Include="1965.cpp" />
-    <ClCompile Include="2011.cpp" />
-    <ClCompile Include="2257.cpp" />
-    <ClCompile Include="2309.cpp" />
-    <ClCompile Include="2311.cpp" />
-    <ClCompile Include="2316.cpp" />
-    <ClCompile Include="2623.cpp" />
-    <ClCompile Include="2665.cpp" />
-    <ClCompile Include="3640.cpp" />
-    <ClCompile Include="4716.cpp" />
-    <ClCompile Include="4963.cpp" />
-    <ClCompile Include="6593.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
