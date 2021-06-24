@@ -23,7 +23,7 @@
     <ProjectGuid>{3D01CC2A-FC3C-4779-BAB9-91DA9D716569}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BaekjoonProblemSolving</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -145,6 +145,7 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="17298.cpp" />
     <ClCompile Include="2636.cpp" />
     <ClCompile Include="9466.cpp" />
   </ItemGroup>
