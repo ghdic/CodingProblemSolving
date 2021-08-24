@@ -43,7 +43,7 @@ A2, ..., AN (1 ≤ Ai ≤ 1,000,000)이 주어진다.
 
 */
 
-
+/*
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -84,3 +84,4 @@ int main() {
 	}
 	return 0;
 }
+*/
