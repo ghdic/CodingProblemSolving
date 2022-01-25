@@ -145,6 +145,8 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1059.cpp" />
+    <ClCompile Include="1103.cpp" />
     <ClCompile Include="1173.cpp" />
     <ClCompile Include="1225.cpp" />
   </ItemGroup>
