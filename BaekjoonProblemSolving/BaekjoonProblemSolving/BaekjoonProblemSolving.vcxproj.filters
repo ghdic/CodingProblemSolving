@@ -47,5 +47,14 @@
     <ClCompile Include="2565.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="20366.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="23801.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2421.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
