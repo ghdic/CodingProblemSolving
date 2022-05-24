@@ -145,14 +145,19 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="10422.cpp" />
     <ClCompile Include="1059.cpp" />
     <ClCompile Include="1103.cpp" />
     <ClCompile Include="1173.cpp" />
+    <ClCompile Include="11909.cpp" />
     <ClCompile Include="1225.cpp" />
     <ClCompile Include="14284.cpp" />
+    <ClCompile Include="16118.cpp" />
     <ClCompile Include="1823.cpp" />
+    <ClCompile Include="20005.cpp" />
     <ClCompile Include="20166.cpp" />
     <ClCompile Include="20366.cpp" />
+    <ClCompile Include="20419.cpp" />
     <ClCompile Include="2195.cpp" />
     <ClCompile Include="2300.cpp" />
     <ClCompile Include="23801.cpp" />
