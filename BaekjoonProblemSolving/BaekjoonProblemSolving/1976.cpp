@@ -46,7 +46,7 @@ YES
 using namespace std;
 
 int n, m;
-int map[201][201], djset[201];
+int djset[201];
 
 int find(int num) {
 	if (djset[num] == num)return num;
@@ -75,7 +75,7 @@ int main() {
 		for (int j = 1; j <= n; ++j) {
 			cin >> a;
 			if (a == 1) {
-				merge(i, a);
+				merge(i, j);
 			}
 		}
 	cin >> a;

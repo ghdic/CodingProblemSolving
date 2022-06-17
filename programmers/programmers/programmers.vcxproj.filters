@@ -15,37 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍1.cpp">
+    <ClCompile Include="피로도.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍2.cpp">
+    <ClCompile Include="아이템줍기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍3.cpp">
+    <ClCompile Include="교점에 별 만들기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍4.cpp">
+    <ClCompile Include="전력망을 둘로 나누기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍5.cpp">
+    <ClCompile Include="최소직사각형.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍6.cpp">
+    <ClCompile Include="부족한금액계산하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="우아한테크코스 코딩테스트1기\프로그래밍7.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level1\문제1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level1\문제2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level2\문제1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="level2\level2문제2.cpp">
+    <ClCompile Include="모음사전.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

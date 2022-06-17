@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 
 #include <string>
@@ -28,3 +29,4 @@ int main() {
 	for (int i = 0; i < k.size(); ++i)
 		cout << k[i] << endl;
 }
+*/
