@@ -179,5 +179,14 @@
     <ClCompile Include="2015.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1662.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1863.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3015.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
