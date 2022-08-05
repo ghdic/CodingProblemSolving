@@ -166,6 +166,7 @@
     <ClCompile Include="16973.cpp" />
     <ClCompile Include="17069.cpp" />
     <ClCompile Include="17370.cpp" />
+    <ClCompile Include="17845.cpp" />
     <ClCompile Include="1823.cpp" />
     <ClCompile Include="18430.cpp" />
     <ClCompile Include="1933.cpp" />
@@ -180,6 +181,7 @@
     <ClCompile Include="20419.cpp" />
     <ClCompile Include="21738.cpp" />
     <ClCompile Include="2195.cpp" />
+    <ClCompile Include="2234.cpp" />
     <ClCompile Include="2300.cpp" />
     <ClCompile Include="23085.cpp" />
     <ClCompile Include="1863.cpp" />
@@ -193,6 +195,7 @@
     <ClCompile Include="2637.cpp" />
     <ClCompile Include="2931.cpp" />
     <ClCompile Include="3015.cpp" />
+    <ClCompile Include="3079.cpp" />
     <ClCompile Include="3151.cpp" />
     <ClCompile Include="6137.cpp" />
     <ClCompile Include="6209.cpp" />
