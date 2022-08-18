@@ -75,7 +75,7 @@ struct vertex {
 };
 int n, m;
 vector<vertex> adj[501];
-int dist[501];
+long long dist[501];
 
 bool bellmanford() {
 	fill(&dist[1], &dist[n + 1], INF);
