@@ -151,6 +151,7 @@
     <ClCompile Include="1059.cpp" />
     <ClCompile Include="1092.cpp" />
     <ClCompile Include="1103.cpp" />
+    <ClCompile Include="11497.cpp" />
     <ClCompile Include="11657.cpp" />
     <ClCompile Include="1173.cpp" />
     <ClCompile Include="11909.cpp" />
@@ -184,6 +185,7 @@
     <ClCompile Include="20366.cpp" />
     <ClCompile Include="20419.cpp" />
     <ClCompile Include="21738.cpp" />
+    <ClCompile Include="2174.cpp" />
     <ClCompile Include="2195.cpp" />
     <ClCompile Include="2234.cpp" />
     <ClCompile Include="2300.cpp" />
