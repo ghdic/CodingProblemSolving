@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="k진수에서 소수 개수 구하기.cpp" />
     <ClCompile Include="교점에 별 만들기.cpp" />
+    <ClCompile Include="두 큐 합 같게 만들기.cpp" />
     <ClCompile Include="모음사전.cpp" />
     <ClCompile Include="부족한금액계산하기.cpp" />
     <ClCompile Include="아이템줍기.cpp" />
     <ClCompile Include="전력망을 둘로 나누기.cpp" />
+    <ClCompile Include="주차 요금 계산.cpp" />
     <ClCompile Include="최소직사각형.cpp" />
+    <ClCompile Include="파괴되지 않는 건물.cpp" />
     <ClCompile Include="피로도.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
